@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Davylink | Shaders</title>
+	<meta
+        name="description"
+        content="Davylink — Shader Development / Real-time Materials / Unity"
+    >
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+<main class="case-study">
+	
+	<div class="shader-page">
+
+		<!-- ============================================================
+			 PAGE INTRO
+			 ============================================================ -->
+
+		<header class="shader-page-intro">
+
+			<p class="eyebrow">
+				<span class="status-dot"></span>
+				REAL-TIME / SHADER DEVELOPMENT
+			</p>
+
+			<h1>SHADERS</h1>
+
+			<p>
+				Real-time materials and procedural rendering techniques
+				developed in Unity using Shader Graph, HLSL and custom
+				shader workflows.
+			</p>
+
+		</header>
+
+
+		<!-- ============================================================
+			 SHADER LIST
+			 ============================================================ -->
+
+		<section class="shader-list">
+
+			<!-- ========================================================
+				 SHADER 01
+				 ======================================================== -->
+
+			<!--<details class="shader-item" open>-->
+			<details class="shader-item">
+				<summary>
+					<!--
+						Preview shown while accordion is closed.
+						Change this image for each shader.
+					-->
+					<div
+						class="shader-preview"
+						style="background-image: url('assets/technical_art/shaders/team_color_shader_banner.png');">
+						<video class="shader-preview-video shader-hover-video"
+								src="assets/technical_art/shaders/team_color.mp4"
+								autoplay
+								muted
+								loop
+								playsinline>
+						</video>
+					</div>
+					<span class="shader-index">
+						01
+					</span>
+					<span class="shader-title">
+						<strong>Complex Unit Shader</strong>
+						<span>
+							INTERACTIVE / CUSTOMIZABLE MATERIAL
+						</span>
+					</span>
+					<span class="shader-type">
+						C# | SHADER GRAPH
+					</span>
+					<span class="shader-plus">
+						+
+					</span>
+				</summary>
+				
+				<div class="shader-content">
+					<!-- ------------------------------------------------
+						 DESCRIPTION
+						 ------------------------------------------------ -->
+					<div class="shader-description">
+						<h2>Animated Team Color with Damage, Dirt and Dissolve Effects</h2>
+						<p>
+							A complete HDRP shader designed for use in all units which need Team Color, Animated Textures (conveyor belts, emission circuits, tank tracks...).
+							It manages multiple core material properties, SSR transparency, dynamic team coloring, wear effects, real-time damage and animations for a wide range of Unity scenarios.
+							It also features a vanishing effect for Fog Of War dissappearing and occlusion.
+						</p>
+					</div>
+
+					<!-- ------------------------------------------------
+						 MAIN MEDIA
+						 ------------------------------------------------ -->
+					<div class="shader-media-grid">
+						<!-- SHADER GRAPH -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								SHADER GRAPH
+							</span>
+							<img
+								src="../assets/technical_art/shaders/team_color_shader_graph.png"
+								alt="Hexa Shield Shader Graph">
+						</div>
+
+						<!-- FINAL RESULT -->
+						<div class="shader-media result-media">
+							<span class="shader-media-label">
+								FINAL RESULT
+							</span>
+							<img
+								src="../assets/technical_art/shaders/team_color_shader_result.png"
+								alt="Liquid Surface applied to material">
+						</div>
+
+
+						<!-- VIDEO -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								REAL-TIME
+							</span>
+							<video
+								class="shader-hover-video"
+								src="assets/3d_art/vehicles/mech_rotate.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+
+					</div>
+
+					<!-- ------------------------------------------------
+						 ADDITIONAL MEDIA
+						 
+						 Puedes añadir más imágenes o vídeos aquí.
+						 Si no necesitas esta sección, simplemente
+						 elimínala.
+						 ------------------------------------------------ -->
+					<div class="shader-extra-media">
+						<div class="shader-media">
+							<span class="shader-media-label">
+								COLOR CUSTOMIZATION
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/team_color_variance.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+						<div class="shader-media">
+							<span class="shader-media-label">
+								FOG OF WAR DISSOLVE
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/team_color_fow.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+					</div>
+					<div class="shader-extra-media">
+						<div class="shader-media">
+							<span class="shader-media-label">
+								INTERACTIVE DAMAGE
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/team_color_shader_damage.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+						<div class="shader-media">
+							<span class="shader-media-label">
+									ANIMATED VARIANT
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/team_color_shader_animation.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+					</div>
+
+
+					<!-- ------------------------------------------------
+						 TECHNICAL INFORMATION
+						 ------------------------------------------------ -->
+
+					<div class="shader-details-grid">
+						<!-- TECHNICAL BREAKDOWN -->
+						<div class="shader-info-block">
+							<h3>
+								TECHNICAL BREAKDOWN
+							</h3>
+							<ul>
+								<li>
+									Full PBR pipeline integration for realistic material interaction.
+								</li>
+								<li>
+									Alpha-based SSR and depth buffer transparency, allowing clear views of the units interior.
+								</li>
+								<li>
+									Mask system for controlling multiple features like metallic/smoothness, height and ambient occlusion using RGBA channels.
+								</li>
+								<li>
+									Mask system for enabling wear, dirt and damage using RGBA channels.
+								</li>
+								<li>
+									Team color selection and emission RBG system allowing easy dynamic color changing of different model emissive parts.
+								</li>
+								<li>
+									Per-channel emission control with masked scrolling UVs and pulsing effects for interesting glowing effects.
+								</li>
+								<li>
+									Texture UV displacement for moving parts such as conveyor belts or tank tracks with speed controlled via script.
+								</li>
+								<li>
+									A dissolve-based appearance or disappearance effect, with controllable edge glow, for spawning or hidding effects.
+								</li>
+							</ul>
+						</div>
+
+						<!-- PARAMETERS -->
+						<div class="shader-info-block">
+							<h3>
+								EXPOSED PARAMETERS
+							</h3>
+							<div class="shader-parameters">								
+								<div class="shader-parameter">
+									Diffuse Map
+								</div>
+								<div class="shader-parameter">
+									Normal Map
+								</div>
+								<div class="shader-parameter">
+									Mask Map (Adjustable)
+								</div>
+								<div class="shader-parameter">
+									Emissive Map (RGB channels custom color)
+								</div>
+								<div class="shader-parameter">
+									Team Color
+								</div>
+								<div class="shader-parameter">
+									Fog Of War Vanishing Setup
+								</div>
+								<div class="shader-parameter">
+									Dissolve Effect Setup
+								</div>
+								<div class="shader-parameter">
+									Damage / Dirt / Opacity Mask
+								</div>
+								<div class="shader-parameter">
+									Dirt Setup
+								</div>
+								<div class="shader-parameter">
+									Damage Setup
+								</div>
+								<div class="shader-parameter">
+									Main Texture UV displacement animation
+								</div>
+								<div class="shader-parameter">
+									Team Color UV displacement animation
+								</div>
+								<div class="shader-parameter">
+									Emissive UV displacement animation
+								</div>
+								<div class="shader-parameter">
+									Emissive fading animation
+								</div>
+								<div class="shader-parameter">
+									Emissive noise
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ------------------------------------------------
+						 TAGS
+						 ------------------------------------------------ -->
+
+					<div class="shader-tags">
+						<span class="shader-tag">
+							SHADER GRAPH
+						</span>
+						<span class="shader-tag">
+							PBR
+						</span>
+						<span class="shader-tag">
+							EMISSION
+						</span>
+						<span class="shader-tag">
+							DISSOLVE
+						</span>
+						<span class="shader-tag">
+							TEAM COLOR
+						</span>
+						<span class="shader-tag">
+							ANIMATION
+						</span>
+						<span class="shader-tag">
+							REAL-TIME
+						</span>
+						<span class="shader-tag">
+							UNITY
+						</span>
+					</div>
+				</div>
+			</details>
+			
+			<!-- ========================================================
+				 SHADER 02
+				 ======================================================== -->
+
+			<details class="shader-item">
+
+				<summary>
+					<div
+						class="shader-preview"
+						style="background-image: url('assets/technical_art/shaders/fow_shader_banner.png');">
+						<video class="shader-preview-video shader-hover-video"
+								src="assets/technical_art/shaders/fow.mp4"
+								autoplay
+								muted
+								loop
+								playsinline>
+						</video>
+					</div>
+					<span class="shader-index">
+						02
+					</span>
+					<span class="shader-title">
+						<strong>Fog Of War</strong>
+						<span>
+							VOLUMETRIC FOG / INTERACTIVE MATERIAL
+						</span>
+					</span>
+					<span class="shader-type">
+						C# | SHADER GRAPH | RENDER TEXTURE
+					</span>
+					<span class="shader-plus">
+						+
+					</span>
+				</summary>
+
+				<div class="shader-content">
+					<!-- ------------------------------------------------
+						 DESCRIPTION
+						 ------------------------------------------------ -->
+					<div class="shader-description">
+						<h2>Interactive Volumetric Fog Of War</h2>
+						<p>
+							Pending...
+						</p>
+					</div>
+
+					<!-- ------------------------------------------------
+						 MAIN MEDIA
+						 ------------------------------------------------ -->
+					<div class="shader-media-grid">
+						<!-- SHADER GRAPH -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								SHADER GRAPH
+							</span>
+							<img
+								src="../assets/technical_art/shaders/fow_shader_graph.png"
+								alt="Hexa Shield Shader Graph">
+						</div>
+
+						<!-- FINAL RESULT -->
+						<div class="shader-media result-media">
+							<span class="shader-media-label">
+								FINAL RESULT
+							</span>
+							<img
+								src="../assets/technical_art/shaders/fow_shader_result.png"
+								alt="Liquid Surface applied to material">
+						</div>
+
+
+						<!-- VIDEO -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								REAL-TIME
+							</span>
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/fow_shader_explore.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+
+					</div>
+
+					<!-- ------------------------------------------------
+						 ADDITIONAL MEDIA
+						 
+						 Puedes añadir más imágenes o vídeos aquí.
+						 Si no necesitas esta sección, simplemente
+						 elimínala.
+						 ------------------------------------------------ -->
+					<div class="shader-extra-media">
+						<div class="shader-media">
+							<span class="shader-media-label">
+								DISSOLVE
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/fow_shader_dissolve.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+						<div class="shader-media">
+							<span class="shader-media-label">
+								INTERACTIVE EXPLORATION
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/fow_shader_exploration.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+					</div>
+					<div class="shader-extra-media">
+						<div class="shader-media">
+							<span class="shader-media-label">
+								VOLUMETRIC COLORS
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/fow_volumetric_shader_colors.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+						<div class="shader-media">
+							<span class="shader-media-label">
+								COLOR VARIATIONS
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/fow_shader_colors.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+					</div>
+
+
+					<!-- ------------------------------------------------
+						 TECHNICAL INFORMATION
+						 ------------------------------------------------ -->
+
+					<div class="shader-details-grid">
+						<!-- TECHNICAL BREAKDOWN -->
+						<div class="shader-info-block">
+							<h3>
+								TECHNICAL BREAKDOWN
+							</h3>
+							<ul>
+								<li>
+									Pattern mapping and projection adaptable to various complex geometries.
+								</li>
+								<li>
+									Fresnel effect tuned for edge glow and holographic depth.
+								</li>
+								<li>
+									Highly customizable color emission control.
+								</li>
+								<li>
+									Custom mask map for resource optimization.
+								</li>
+							</ul>
+						</div>
+
+						<!-- PARAMETERS -->
+						<div class="shader-info-block">
+							<h3>
+								EXPOSED PARAMETERS
+							</h3>
+							<div class="shader-parameters">								
+								<div class="shader-parameter">
+									Main Color
+								</div>
+								<div class="shader-parameter">
+									Noise Color
+								</div>
+								<div class="shader-parameter">
+									Outline Color
+								</div>
+								<div class="shader-parameter">
+									Opacity
+								</div>
+								<div class="shader-parameter">
+									Mask
+								</div>
+								<div class="shader-parameter">
+									Fresnel Power
+								</div>
+								<div class="shader-parameter">
+									Wave Distance
+								</div>
+								<div class="shader-parameter">
+									Wave Speed
+								</div>
+								<div class="shader-parameter">
+									Wave Width
+								</div>
+								<div class="shader-parameter">
+									Noise Speed
+								</div>
+								<div class="shader-parameter">
+									Noise Density
+								</div>
+								<div class="shader-parameter">
+									Noise Power
+								</div>
+								<div class="shader-parameter">
+									Border Power
+								</div>
+								<div class="shader-parameter">
+									Border Width
+								</div>
+								<div class="shader-parameter">
+									Border Depth
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ------------------------------------------------
+						 TAGS
+						 ------------------------------------------------ -->
+
+					<div class="shader-tags">
+						<span class="shader-tag">
+							SHADER GRAPH
+						</span>
+						<span class="shader-tag">
+							EMISSION
+						</span>
+						<span class="shader-tag">
+							FRESNEL
+						</span>
+						<span class="shader-tag">
+							VERTEX DISPLACEMENT
+						</span>
+						<span class="shader-tag">
+							REAL-TIME
+						</span>
+						<span class="shader-tag">
+							UNITY
+						</span>
+					</div>
+				</div>
+			</details>
+			
+			<!-- ========================================================
+				 SHADER 03
+				 ======================================================== -->
+
+			<details class="shader-item">
+
+				<summary>
+					<!--
+						Preview shown while accordion is closed.
+						Change this image for each shader.
+					-->
+					<div
+						class="shader-preview"
+						style="background-image: url('assets/technical_art/shaders/hexa_shield_shader_banner.png');">
+						<video class="shader-preview-video shader-hover-video"
+								src="assets/technical_art/shaders/hexa_shield.mp4"
+								autoplay
+								muted
+								loop
+								playsinline>
+						</video>
+					</div>
+					<span class="shader-index">
+						03
+					</span>
+					<span class="shader-title">
+						<strong>Sci-Fi Energy Shield</strong>
+						<span>
+							VERTEX DISPLACEMENT / ANIMATED MATERIAL
+						</span>
+					</span>
+					<span class="shader-type">
+						SHADER GRAPH
+					</span>
+					<span class="shader-plus">
+						+
+					</span>
+				</summary>
+
+				<div class="shader-content">
+					<!-- ------------------------------------------------
+						 DESCRIPTION
+						 ------------------------------------------------ -->
+					<div class="shader-description">
+						<h2>Technological Holographic Shield</h2>
+						<p>
+							A holographic-style procedural material designed to create futuristic displays and force-field shields. 
+							It features customizable colors, zonal light intensity control, polygon displacement, animation speed and dynamic edge effects. 
+							Fully optimized for real-time use in Unity.
+						</p>
+					</div>
+
+					<!-- ------------------------------------------------
+						 MAIN MEDIA
+						 ------------------------------------------------ -->
+					<div class="shader-media-grid">
+						<!-- SHADER GRAPH -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								SHADER GRAPH
+							</span>
+							<img
+								src="../assets/technical_art/shaders/hexa_shield_shader_graph.png"
+								alt="Hexa Shield Shader Graph">
+						</div>
+
+						<!-- FINAL RESULT -->
+						<div class="shader-media result-media">
+							<span class="shader-media-label">
+								FINAL RESULT
+							</span>
+							<img
+								src="../assets/technical_art/shaders/hexa_shield_shader_result.png"
+								alt="Liquid Surface applied to material">
+						</div>
+
+
+						<!-- VIDEO -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								REAL-TIME
+							</span>
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/hexa_shield.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+
+					</div>
+
+					<!-- ------------------------------------------------
+						 ADDITIONAL MEDIA
+						 
+						 Puedes añadir más imágenes o vídeos aquí.
+						 Si no necesitas esta sección, simplemente
+						 elimínala.
+						 ------------------------------------------------ -->
+					<div class="shader-extra-media">
+						<div class="shader-media">
+							<span class="shader-media-label">
+								DETAIL
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/hexa_shield_ingame.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+						<div class="shader-media">
+							<span class="shader-media-label">
+								VARIATIONS
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/hexa_shield_detail.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+					</div>
+
+
+					<!-- ------------------------------------------------
+						 TECHNICAL INFORMATION
+						 ------------------------------------------------ -->
+
+					<div class="shader-details-grid">
+						<!-- TECHNICAL BREAKDOWN -->
+						<div class="shader-info-block">
+							<h3>
+								TECHNICAL BREAKDOWN
+							</h3>
+							<ul>
+								<li>
+									Pattern mapping and projection adaptable to various complex geometries.
+								</li>
+								<li>
+									Fresnel effect tuned for edge glow and holographic depth.
+								</li>
+								<li>
+									Highly customizable color emission control.
+								</li>
+								<li>
+									Custom mask map for resource optimization.
+								</li>
+							</ul>
+						</div>
+
+						<!-- PARAMETERS -->
+						<div class="shader-info-block">
+							<h3>
+								EXPOSED PARAMETERS
+							</h3>
+							<div class="shader-parameters">								
+								<div class="shader-parameter">
+									Main Color
+								</div>
+								<div class="shader-parameter">
+									Noise Color
+								</div>
+								<div class="shader-parameter">
+									Outline Color
+								</div>
+								<div class="shader-parameter">
+									Opacity
+								</div>
+								<div class="shader-parameter">
+									Mask
+								</div>
+								<div class="shader-parameter">
+									Fresnel Power
+								</div>
+								<div class="shader-parameter">
+									Wave Distance
+								</div>
+								<div class="shader-parameter">
+									Wave Speed
+								</div>
+								<div class="shader-parameter">
+									Wave Width
+								</div>
+								<div class="shader-parameter">
+									Noise Speed
+								</div>
+								<div class="shader-parameter">
+									Noise Density
+								</div>
+								<div class="shader-parameter">
+									Noise Power
+								</div>
+								<div class="shader-parameter">
+									Border Power
+								</div>
+								<div class="shader-parameter">
+									Border Width
+								</div>
+								<div class="shader-parameter">
+									Border Depth
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ------------------------------------------------
+						 TAGS
+						 ------------------------------------------------ -->
+
+					<div class="shader-tags">
+						<span class="shader-tag">
+							SHADER GRAPH
+						</span>
+						<span class="shader-tag">
+							EMISSION
+						</span>
+						<span class="shader-tag">
+							FRESNEL
+						</span>
+						<span class="shader-tag">
+							VERTEX DISPLACEMENT
+						</span>
+						<span class="shader-tag">
+							REAL-TIME
+						</span>
+						<span class="shader-tag">
+							UNITY
+						</span>
+					</div>
+				</div>
+			</details>
+			
+			<!-- ========================================================
+				 SHADER 04
+				 ======================================================== -->
+
+			<details class="shader-item">
+
+				<summary>
+					<!--
+						Preview shown while accordion is closed.
+						Change this image for each shader.
+					-->
+					<div
+						class="shader-preview"
+						style="background-image: url('assets/technical_art/shaders/wind_foliage_shader_banner.png');">
+						<video class="shader-preview-video shader-hover-video"
+								src="assets/technical_art/shaders/wind_foliage.mp4"
+								autoplay
+								muted
+								loop
+								playsinline>
+						</video>
+					</div>
+					<span class="shader-index">
+						04
+					</span>
+					<span class="shader-title">
+						<strong>Foliage Wind</strong>
+						<span>
+							VERTEX DISPLACEMENT / ANIMATED MATERIAL
+						</span>
+					</span>
+					<span class="shader-type">
+						SHADER GRAPH
+					</span>
+					<span class="shader-plus">
+						+
+					</span>
+				</summary>
+				
+				<div class="shader-content">
+					<!-- ------------------------------------------------
+						 DESCRIPTION
+						 ------------------------------------------------ -->
+					<div class="shader-description">
+						<h2>Tree and plants with foliage animation</h2>
+						<p>
+							Interactive foliage material capable of simulating realistic wind movement through the leaves. 
+							It allows for full customization of foliage color and the adjustment of multiple wind parameters to suit various atmospheric conditions within the Unity game environment.
+						</p>
+					</div>
+
+					<!-- ------------------------------------------------
+						 MAIN MEDIA
+						 ------------------------------------------------ -->
+					<div class="shader-media-grid">
+						<!-- SHADER GRAPH -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								SHADER GRAPH
+							</span>
+							<img
+								src="../assets/technical_art/shaders/wind_foliage_shader_graph.png"
+								alt="Hexa Shield Shader Graph">
+						</div>
+
+						<!-- FINAL RESULT -->
+						<div class="shader-media result-media">
+							<span class="shader-media-label">
+								FINAL RESULT
+							</span>
+							<img
+								src="../assets/technical_art/shaders/wind_foliage_shader_result.png"
+								alt="Liquid Surface applied to material">
+						</div>
+
+
+						<!-- VIDEO -->
+						<div class="shader-media">
+							<span class="shader-media-label">
+								REAL-TIME
+							</span>
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/wind_foliage.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+
+					</div>
+
+					<!-- ------------------------------------------------
+						 ADDITIONAL MEDIA
+						 
+						 Puedes añadir más imágenes o vídeos aquí.
+						 Si no necesitas esta sección, simplemente
+						 elimínala.
+						 ------------------------------------------------ -->
+					<div class="shader-extra-media">
+						<div class="shader-media">
+							<span class="shader-media-label">
+								PARAMETERS DETAIL
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/wind_foliage_ingame.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+						<div class="shader-media">
+							<span class="shader-media-label">
+								VARIATIONS
+							</span>
+							<!--<img
+								src="../assets/technical_art/shaders/hexa_shield_detail.png"
+								alt="Liquid Surface detail">-->
+							<video
+								class="shader-hover-video"
+								src="assets/technical_art/shaders/wind_foliage_detail.mp4"
+								muted
+								loop
+								playsinline>
+							</video>
+						</div>
+					</div>
+
+
+					<!-- ------------------------------------------------
+						 TECHNICAL INFORMATION
+						 ------------------------------------------------ -->
+
+					<div class="shader-details-grid">
+						<!-- TECHNICAL BREAKDOWN -->
+						<div class="shader-info-block">
+							<h3>
+								TECHNICAL BREAKDOWN
+							</h3>
+							<ul>
+								<li>
+									Noise-based vertex animation for wind simulation.
+								</li>
+								<li>
+									Customizable, instanced foliage colorization system.
+								</li>
+								<li>
+									Optimized for use in large forest areas with multiple instances.
+								</li>
+								<li>
+									Positional displacement in mesh local space.
+								</li>
+							</ul>
+						</div>
+
+						<!-- PARAMETERS -->
+						<div class="shader-info-block">
+							<h3>
+								EXPOSED PARAMETERS
+							</h3>
+							<div class="shader-parameters">								
+								<div class="shader-parameter">
+									Foliage Color
+								</div>
+								<div class="shader-parameter">
+									Emission Color
+								</div>
+								<div class="shader-parameter">
+									Emission Intensity
+								</div>
+								<div class="shader-parameter">
+									Alpha Clipping
+								</div>
+								<div class="shader-parameter">
+									Mask
+								</div>
+								<div class="shader-parameter">
+									Wind Direction
+								</div>
+								<div class="shader-parameter">
+									Wind Speed
+								</div>
+								<div class="shader-parameter">
+									Wind Speed Limit
+								</div>
+								<div class="shader-parameter">
+									Wind Strength
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ------------------------------------------------
+						 TAGS
+						 ------------------------------------------------ -->
+
+					<div class="shader-tags">
+						<span class="shader-tag">
+							SHADER GRAPH
+						</span>
+						<span class="shader-tag">
+							VERTEX ANIMATION
+						</span>
+						<span class="shader-tag">
+							ENVIRONMENT
+						</span>
+						<span class="shader-tag">
+							WIND SIMULATION
+						</span>
+						<span class="shader-tag">
+							REAL-TIME
+						</span>
+						<span class="shader-tag">
+							UNITY
+						</span>
+					</div>
+				</div>
+			</details>
+			
+			
+		</section>
+	</div>
+
+</main>
+
+</body>
+</html>

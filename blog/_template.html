@@ -1,0 +1,708 @@
+/* =====================================
+   CASE STUDY MODAL
+====================================== */
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
+/* =====================================
+   MODAL
+====================================== */
+
+.case-study-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.case-study-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.case-study-modal-backdrop {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.88);
+}
+
+
+.case-study-modal-window {
+    position: relative;
+    z-index: 1;
+
+    width: min(1200px, 100%);
+    height: min(90vh, 1000px);
+
+    overflow-y: auto;
+
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.6);
+
+    overscroll-behavior: contain;
+
+    scrollbar-width: thin;
+    scrollbar-color:
+        var(--accent)
+        var(--graphite);
+}
+
+
+.case-study-modal-close {
+    position: sticky;
+
+    top: 18px;
+    float: right;
+
+    z-index: 20;
+
+    width: 42px;
+    height: 42px;
+
+    margin: 18px 18px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--line-bright);
+
+    background: rgba(10, 11, 13, 0.85);
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 28px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.case-study-modal-close:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+
+/* =====================================
+   LOADING / ERROR
+====================================== */
+
+.case-study-loading,
+.case-study-error {
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 14px;
+
+    padding: 60px;
+
+    color: var(--text-soft);
+
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.case-study-loading span,
+.case-study-error span {
+    color: var(--accent);
+    font-size: 12px;
+    letter-spacing: 0.15em;
+}
+
+.case-study-error p {
+    margin: 0;
+}
+
+
+/* =====================================
+   CASE STUDY
+====================================== */
+
+.case-study {
+    width: 100%;
+}
+
+.case-study-header {
+    padding: 72px 70px 42px;
+
+    border-bottom: 1px solid var(--line);
+}
+
+
+.case-study-meta {
+    display: flex;
+    gap: 18px;
+
+    margin-bottom: 18px;
+
+    color: var(--accent);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+
+.case-study-header h1 {
+    margin: 0;
+
+    font-size: clamp(36px, 5vw, 72px);
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+
+.case-study-intro {
+    max-width: 760px;
+
+    margin: 26px 0 24px;
+
+    color: var(--text-soft);
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+.case-study-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.case-study-tools span {
+    padding: 7px 10px;
+
+    border: 1px solid var(--line);
+
+    color: var(--text-soft);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+
+/* =====================================
+   CAROUSEL
+====================================== */
+
+.case-study-carousel {
+    padding: 40px 50px 34px;
+
+    border-bottom: 1px solid var(--line);
+}
+
+
+.carousel-main {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 520px;
+
+    background: #050607;
+    border: 1px solid var(--line);
+}
+
+
+.carousel-stage {
+    width: 100%;
+    height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.carousel-stage img,
+.carousel-stage video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.carousel-stage iframe {
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    z-index: 5;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 48px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--line-bright);
+
+    background: rgba(10, 11, 13, 0.8);
+    color: var(--text);
+
+    font-size: 38px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.carousel-prev {
+    left: 14px;
+}
+
+.carousel-next {
+    right: 14px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+
+/* =====================================
+   CAROUSEL INFO
+====================================== */
+
+.carousel-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 4px;
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+
+.carousel-counter {
+    color: var(--accent);
+    white-space: nowrap;
+}
+
+
+.carousel-caption {
+    color: var(--text-soft);
+    text-align: right;
+}
+
+
+/* =====================================
+   THUMBNAILS
+====================================== */
+
+.carousel-thumbnails {
+    display: flex;
+    gap: 10px;
+
+    overflow-x: auto;
+
+    padding: 4px 0 10px;
+
+    scrollbar-width: thin;
+    scrollbar-color:
+        var(--accent)
+        var(--graphite);
+}
+
+
+.carousel-thumbnail {
+    position: relative;
+
+    flex: 0 0 110px;
+
+    width: 110px;
+    height: 74px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    border: 1px solid var(--line);
+
+    background: var(--graphite);
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.carousel-thumbnail:hover {
+    border-color: var(--line-bright);
+    transform: translateY(-2px);
+}
+
+.carousel-thumbnail.is-active {
+    border-color: var(--accent);
+    box-shadow:
+        0 0 0 1px var(--accent);
+}
+
+
+.carousel-thumbnail img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.carousel-thumbnail > span:last-child {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 5px 6px;
+
+    background: rgba(5, 6, 7, 0.82);
+
+    color: var(--text);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 8px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.carousel-thumbnail-video {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--accent);
+
+    font-size: 22px;
+}
+
+
+/* =====================================
+   CASE STUDY BODY
+====================================== */
+
+.case-study-body {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 70px;
+}
+
+
+.case-study-section {
+    margin-bottom: 90px;
+}
+
+.case-study-section:last-child {
+    margin-bottom: 0;
+}
+
+
+.case-study-label {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--accent);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+
+.case-study-section h2 {
+    margin: 0 0 22px;
+
+    font-size: clamp(26px, 3vw, 40px);
+    line-height: 1;
+}
+
+
+.case-study-section p {
+    margin: 0 0 22px;
+
+    color: var(--text-soft);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+.case-study-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   BLOG IMAGES
+====================================== */
+
+.case-study-image {
+    margin: 40px 0 0;
+}
+
+
+.case-study-image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border: 1px solid var(--line);
+}
+
+
+.case-study-image figcaption,
+.case-study-image-grid figcaption {
+    margin-top: 9px;
+
+    color: var(--text-soft);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+}
+
+
+/* =====================================
+   IMAGE GRID
+====================================== */
+
+.case-study-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin-top: 40px;
+}
+
+
+.case-study-image-grid figure {
+    margin: 0;
+}
+
+
+.case-study-image-grid img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border: 1px solid var(--line);
+}
+
+
+/* =====================================
+   BLOG SPLIT
+====================================== */
+
+.case-study-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+
+.case-study-split img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border: 1px solid var(--line);
+}
+
+
+/* =====================================
+   TECHNICAL NOTE
+====================================== */
+
+.case-study-note {
+    margin-top: 35px;
+
+    padding: 24px;
+
+    border-left: 2px solid var(--accent);
+
+    background: var(--graphite);
+}
+
+
+.case-study-note strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: var(--accent);
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+}
+
+
+.case-study-note p {
+    margin: 0;
+}
+
+
+/* =====================================
+   MOBILE
+====================================== */
+
+@media (max-width: 780px) {
+
+    .case-study-modal {
+        padding: 0;
+    }
+
+    .case-study-modal-window {
+        width: 100%;
+        height: 100vh;
+
+        border: 0;
+    }
+
+    .case-study-modal-close {
+        position: fixed;
+
+        top: 12px;
+        right: 12px;
+
+        margin: 0;
+
+        background: rgba(10, 11, 13, 0.9);
+    }
+
+    .case-study-header {
+        padding: 70px 24px 32px;
+    }
+
+    .case-study-carousel {
+        padding: 24px 16px;
+    }
+
+    .carousel-main {
+        min-height: 300px;
+    }
+
+    .carousel-stage {
+        height: 300px;
+    }
+
+    .carousel-prev,
+    .carousel-next {
+        width: 38px;
+        height: 54px;
+
+        font-size: 28px;
+    }
+
+    .carousel-prev {
+        left: 8px;
+    }
+
+    .carousel-next {
+        right: 8px;
+    }
+
+    .carousel-thumbnail {
+        flex-basis: 90px;
+
+        width: 90px;
+        height: 62px;
+    }
+
+    .case-study-body {
+        padding: 45px 24px;
+    }
+
+    .case-study-section {
+        margin-bottom: 65px;
+    }
+
+    .case-study-image-grid,
+    .case-study-split {
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+}

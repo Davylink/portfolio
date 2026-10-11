@@ -11,22 +11,24 @@
 <body>
 
 <header class="site-header">
-    <div class="brand-wrap">
-        <a href="#top" class="brand-icon" aria-label="Davylink home"><img class="header-logo" src="assets/logo.png" /></a>
-        <!--<a href="#top" class="brand-icon" aria-label="Davylink home"><img class="header-logo" src="assets/logo_v2_blue.png" /></a>-->
-        <a href="#top" class="logo">Davylink</a>
-    </div>
+	<div class="site-header-inside">
+		<div class="brand-wrap">
+			<a href="#top" class="brand-icon" aria-label="Davylink home"><img class="header-logo" src="assets/logo.png" /></a>
+			<!--<a href="#top" class="brand-icon" aria-label="Davylink home"><img class="header-logo" src="assets/logo_v2_blue.png" /></a>-->
+			<a href="#top" class="logo">Davylink</a>
+		</div>
 
-    <nav class="main-nav" aria-label="Navegación principal">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#work">Work</a>
-        <a href="#technical-art">Technical Art</a>
-        <a href="#3d-art">3D Art</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+		<nav class="main-nav" aria-label="Navegación principal">
+			<a href="#portfolio">Portfolio</a>
+			<a href="#work">Work</a>
+			<a href="#technical-art">Technical Art</a>
+			<a href="#3d-art">3D Art</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</nav>
 
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+		<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+	</div>
 </header>
 
 <main id="top">
@@ -44,7 +46,8 @@
         <p class="hero-name">David Cañizares</p>
         <p class="hero-subtitle">Technical Artist · 3D Artist · Game Developer</p>
 		<div style="width:100%; text-align: center;">
-        <button class="showreel-button" data-showreel>Watch Showreel <span>➤</span></button><!--↗-->
+        <!--<button class="showreel-button" data-showreel>Watch Showreel <span>➤</span></button>--><!--↗-->
+		<button type="button"class="showreel-button"  data-blog="blog/showreel.html" data-media="0">Watch Showreel <span>➤</span></button>
 		</div>
     </div>
     <div class="hero-meta"><span>DL / 001</span><span>PORTFOLIO_2026</span><span>UNITY · SHADERS · VFX · 3D</span></div>
@@ -73,27 +76,26 @@
     </div>
 
     <div class="portfolio-grid">
-        <article class="portfolio-item reveal" data-category="selected projects 3d">
+        <article class="portfolio-item reveal" data-category="selected projects 3d" data-blog="blog/3d_design.html" data-media="0">
             <!--<a href="#work" class="portfolio-link"><div class="portfolio-image image-placeholder"><span>PROJECT 01</span><i class="corner-mark">01</i></div><div class="portfolio-info"><h3>Project Title</h3><p>Game / Professional</p></div></a>-->
 			<a href="#work"
-			   class="portfolio-link media-trigger"
-			   data-media-type="image"
-			   data-media-src="assets/portfolio/project-01.jpg"
-			   data-media-title="RTS Project">
-
+			   class="portfolio-link">
 				<div class="portfolio-image">
-					<span>PROJECT 01 - Image</span>
+					<img
+						src="assets/portfolio/3d-design.png"
+						alt="3D Design">
+					<!--<span>3D Design</span>-->
 					<i class="corner-mark">01</i>
 
 					<div class="portfolio-info">
-						<h3>RTS Project</h3>
-						<p>Game / Technical Art</p>
+						<h3>3D Design</h3>
+						<p>Technical Art</p>
 					</div>
 				</div>
 			</a>
 	
         </article>
-        <article class="portfolio-item reveal" data-category="selected projects 3d">
+        <article class="portfolio-item reveal" data-category="selected projects 3d" data-blog="blog/sci-fi-soldier.html" data-media="0">
             <!--<a href="#work" class="portfolio-link"><div class="portfolio-image image-placeholder"><span>PROJECT 02</span><i class="corner-mark">02</i></div><div class="portfolio-info"><h3>Project Title</h3><p>Game / Professional</p></div></a>-->
 			<a href="#"
 			   class="portfolio-link media-trigger"
@@ -213,7 +215,36 @@
 			<summary>
 				<span class="work-index">01</span>
 				<strong>RTS Project</strong>
-				<span class="work-type">GAME / REAL-TIME</span>
+				<span class="work-type">REAL-TIME STRATEGY</span>
+				<span class="accordion-plus">+</span>
+			</summary>
+			<div class="work-panel">
+				<div class="work-panel-main">
+					<div class="media-placeholder media-trigger">
+						<video class="work-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
+							<source src="assets/hero-background.mov" type="video/mp4">
+						</video>
+					</div>
+					<div>
+						<h3>RTS Project</h3>
+						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
+						<div class="case-study-trigger">
+							<a href="#"							
+								data-blog="blog/work/rts_project.html"
+								data-media="0">
+								VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</details>
+
+        <details class="work-row">
+			<summary>
+				<span class="work-index">02</span>
+				<strong>3D Platformer</strong>
+				<span class="work-type">STYLIZED | PLATFORMS</span>
 				<span class="accordion-plus">+</span>
 			</summary>
 			<div class="work-panel">
@@ -224,46 +255,102 @@
 					<div>
 						<h3>RTS Project</h3>
 						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
-					</div>
-				</div>
-				<div class="work-subgrid">
-					<div>
-						<b>Overview</b><p>Game direction, systems and visual development.</p>
-					</div>
-					<div>
-						<b>My Role</b><p>Technical Art, 3D, shaders, VFX and Unity integration.</p>
-					</div>
-					<div>
-						<b>3D Pipeline</b><p>Modeling → UV → Substance → engine.</p>
-					</div>
-					<div>
-						<b>Technical Art</b><p>Rendering, optimization and production workflows.</p>
-					</div>
-					<div>
-						<b>Unity Integration</b><p>Assets, materials, prefabs and custom systems.</p>
-					</div>
-					<div>
-						<b>Shaders</b><p>Shader Graph, HLSL and procedural materials.</p>
-					</div>
-					<div>
-						<b>VFX</b><p>Real-time effects and VFX Graph setups.</p>
-					</div>
-					<div>
-						<b>Tools</b><p>Editor tooling and automation.</p>
-					</div>
-					<div>
-						<b>Gameplay</b><p>Units, buildings, targeting and RTS systems.</p>
+						<div class="case-study-trigger">
+							<a href="#"							
+								data-blog="blog/work/3d_platformer.html"
+								data-media="0">
+								VIEW CASE STUDY
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</details>
-
-        <details class="work-row"><summary><span class="work-index">02</span><strong>Characters</strong><span class="work-type">3D / CHARACTER</span><span class="accordion-plus">+</span></summary><div class="work-panel"><div class="work-subgrid four"><div><b>Modeling</b><p>Production-ready character topology.</p></div><div><b>Sculpting</b><p>Primary and secondary forms.</p></div><div><b>Texturing</b><p>Material definition and surface detail.</p></div><div><b>Animation</b><p>Rig-ready assets and deformation.</p></div></div></div></details>
-
-        <details class="work-row"><summary><span class="work-index">03</span><strong>Environments</strong><span class="work-type">3D / WORLD</span><span class="accordion-plus">+</span></summary><div class="work-panel"><div class="work-subgrid four"><div><b>Level Art</b><p>Composition, set dressing and visual hierarchy.</p></div><div><b>Modeling</b><p>Modular and hero assets.</p></div><div><b>Materials</b><p>Surface libraries and shader-driven materials.</p></div><div><b>Unity</b><p>Engine integration, lighting and optimization.</p></div></div></div></details>
-
-        <details class="work-row"><summary><span class="work-index">04</span><strong>Vehicles &amp; Props</strong><span class="work-type">HARD SURFACE</span><span class="accordion-plus">+</span></summary><div class="work-panel"><div class="work-subgrid four"><div><b>Hard Surface</b><p>Mechanical modeling and clean topology.</p></div><div><b>UV</b><p>Efficient UV layouts and texel density.</p></div><div><b>Substance</b><p>Procedural materials and wear.</p></div><div><b>Unity</b><p>Prefab, shader and runtime integration.</p></div></div></div></details>
-    </div>
+			
+        <details class="work-row">
+			<summary>
+				<span class="work-index">03</span>
+				<strong>Party Game</strong>
+				<span class="work-type">ONLINE MULTIPLAYER</span>
+				<span class="accordion-plus">+</span>
+			</summary>
+			<div class="work-panel">
+				<div class="work-panel-main">
+					<div class="media-placeholder media-trigger">
+						<span>VIDEO PLACEHOLDER</span>
+					</div>
+					<div>
+						<h3>RTS Project</h3>
+						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
+						<div class="case-study-trigger">
+							<a href="#"							
+								data-blog="blog/work/party_game.html"
+								data-media="0">
+								VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</details>
+			
+		<details class="work-row">
+			<summary>
+				<span class="work-index">04</span>
+				<strong>Turn Based Strategy</strong>
+				<span class="work-type">ISOMETRIC | TURN-BASED</span>
+				<span class="accordion-plus">+</span>
+			</summary>
+			<div class="work-panel">
+				<div class="work-panel-main">
+					<div class="media-placeholder media-trigger">
+						<video class="work-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
+							<source src="assets/work/turn_based_strategy/turn-based-gameplay.mp4" type="video/mp4">
+						</video>
+					</div>
+					<div>
+						<h3>RTS Project</h3>
+						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
+						<div class="case-study-trigger">
+							<a href="#"							
+								data-blog="blog/work/turn_based_stragegy.html"
+								data-media="0">
+								VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</details>
+			
+        <details class="work-row">
+			<summary>
+				<span class="work-index">05</span>
+				<strong>Survival</strong>
+				<span class="work-type">CONCEPT | REALISTIC</span>
+				<span class="accordion-plus">+</span>
+			</summary>
+			<div class="work-panel">
+				<div class="work-panel-main">
+					<div class="media-placeholder media-trigger">
+						<span>VIDEO PLACEHOLDER</span>
+					</div>
+					<div>
+						<h3>RTS Project</h3>
+						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
+						<div class="case-study-trigger">
+							<a href="#"							
+								data-blog="blog/work/survival.html"
+								data-media="0">
+								VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</details>
+			
+	</div>
 </section>
 
 <section id="technical-art" class="section technical-section">
@@ -290,54 +377,80 @@
 		</div>
 
 		<div class="vertical-accordion">
-			<details open>
-				<summary>
+			<!--<details open>-->
+			<details>
+				<summary style="background-image: url(assets/technical_art/shaders/hexa_shield_shader_vertical.png)">
 					<span>01</span>
 					<strong>Shaders</strong>
 					<em>Shader Graph / HLSL / Materials</em>
 					<b>+</b>
 				</summary>
 				<div class="vertical-panel">
-					<p>
-						Shader Graph, HLSL y materiales procedurales
-						para rendering en tiempo real.
-					</p>
-
+					<div>
+						<p>
+							Shader Graph, animated and procedural materials for real-time rendering.
+						</p>
+						<div class="case-study-trigger">
+							<a href="#"
+								class="case-study-trigger"
+								data-blog="blog/shaders.html"
+								data-media="0">
+							   VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
 					<span>PROCEDURAL / PBR / REAL-TIME</span>
-				</div>
+				</div>				
 			</details>
 			<details>
-				<summary>
+				<summary style="background-image: url(assets/technical_art/vfx/magical-orb-vfx-vertical.png)">
 					<span>02</span>
 					<strong>VFX</strong>
 					<em>VFX Graph / Real-time effects</em>
 					<b>+</b>
 				</summary>
 				<div class="vertical-panel">
-					<p>
-						VFX Graph, partículas GPU y efectos
-						visuales interactivos.
-					</p>
-
-					<span>GPU / PARTICLES / SIMULATION</span>
+					<div>
+						<p>
+							VFX Graph, particle systems and interactive visual effects.
+						</p>
+						<div class="case-study-trigger">
+							<a href="#"
+								class="case-study-trigger"
+								data-blog="blog/vfx.html"
+								data-media="0">
+							   VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
+					<span>GPU / PARTICLES / SIMULATION</span>	
 				</div>
 			</details>
 			<details>
-				<summary>
+				<summary style="background-image: url(assets/technical_art/unity_tools/road_tool_vertical.png)">
 					<span>03</span>
 					<strong>Unity Tools</strong>
 					<em>Editor Tools / Automation / C#</em>
 					<b>+</b>
 				</summary>
 				<div class="vertical-panel">
-					<p>
-						Herramientas de editor, automatización y
-						sistemas personalizados en C#.
-					</p>
+					<div>
+						<p>
+							Unity Editor Tools, automatizations and custom systems in C#.
+						</p>
+						<div class="case-study-trigger">
+							<a href="#"
+								class="case-study-trigger"
+								data-blog="blog/unity_tools.html"
+								data-media="0">
+							   VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
 					<span>WORKFLOW / PIPELINE / EDITOR</span>
 				</div>
 			</details>
-			<details>
+			<!--<details>
 				<summary>
 					<span>04</span>
 					<strong>Pipelines</strong>
@@ -345,14 +458,22 @@
 					<b>+</b>
 				</summary>
 				<div class="vertical-panel">
-					<p>
-						Integración de assets, optimización y
-						workflows de producción.
-					</p>
-
+					<div>
+						<p>
+							Asset integration, optimization and production workflows.
+						</p>
+						<div class="case-study-trigger">
+							<a href="#"
+								class="case-study-trigger"
+								data-blog="blog/pipelines.html"
+								data-media="0">
+							   VIEW CASE STUDY
+							</a>
+						</div>
+					</div>
 					<span>PERFORMANCE / PRODUCTION</span>
 				</div>
-			</details>
+			</details>-->
 		</div>
     </div>
 </section>
@@ -370,80 +491,466 @@
 		</div>
 	</div>
 	
-    <div class="portfolio-filters art-filters reveal"><button class="art-filter active" data-art-filter="all">All</button><button class="art-filter" data-art-filter="character">Character</button><button class="art-filter" data-art-filter="environment">Environment</button><button class="art-filter" data-art-filter="vehicle">Vehicle</button><button class="art-filter" data-art-filter="props">Props</button></div>
-    <div class="art-gallery">
+    <div class="portfolio-filters art-filters reveal">
+		<button class="art-filter active" data-art-filter="all">All</button>
+		<button class="art-filter" data-art-filter="character">Character</button>
+		<button class="art-filter" data-art-filter="environment">Environment</button>
+		<button class="art-filter" data-art-filter="vehicle">Vehicle</button>
+		<button class="art-filter" data-art-filter="building">Building</button>
+		<button class="art-filter" data-art-filter="props">Props</button>
+	</div>
+	
+    <div class="art-gallery">	
+		
 		<figure class="art-card reveal media-trigger"
+				data-art="character"
+				data-blog="blog/3d_art_character_role_per_turns.html"
 				data-media-type="image"
-				data-media-src="assets/3d/character-render.jpg"
+				data-media-src="assets/3d_art/characters/scientific-render-view.png"
 				data-media-title="Character">
-			<div class="art-image">
-				<span>CHARACTER / RENDER</span>
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/characters/scientific-render-view.png"
+					alt="Character">
+				<i class="corner-mark">01</i>
+				<div class="portfolio-info">
+					<h3>Scientific</h3>
+					<p>Isometric | Stylized</p>
+				</div>
 			</div>
-			<figcaption>
-				<b>Character</b>
-				<small>Render / Final</small>
-			</figcaption>
 		</figure>
+		
 		<figure class="art-card reveal media-trigger"
+				data-art="character"
+				data-blog="blog/3d_art_character_rts.html"
 				data-media-type="image"
-				data-media-src="assets/3d/character-wireframe.jpg"
-				data-media-title="Character Wireframe">
-			<div class="art-image">
-				<span>CHARACTER / WIREFRAME</span>
+				data-media-src="assets/3d_art/characters/jetpack-pilot-unity-close.png"
+				data-media-title="Character">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/characters/jetpack-pilot-unity-close.png"
+					alt="Character">
+				<i class="corner-mark">03</i>
+				<div class="portfolio-info">
+					<h3>RTS Infantry</h3>
+					<p>RTS | Low Poly</p>
+				</div>
 			</div>
-			<figcaption>
-				<b>Character</b>
-				<small>Wireframe / Topology</small>
-			</figcaption>
 		</figure>
+		
 		<figure class="art-card reveal media-trigger"
+				data-art="character"
+				data-blog="blog/3d_art_character_platformer.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/characters/astronaut-front-unity.png"
+				data-media-title="Character">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/characters/astronaut-front-unity.png"
+					alt="Character">
+				<i class="corner-mark">02</i>
+				<div class="portfolio-info">
+					<h3>Astronaut</h3>
+					<p>Render | Platformer</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="character"
+				data-blog="blog/3d_art_character_survival.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/characters/male-survivor-render-view.png"
+				data-media-title="Character">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/characters/male-survivor-render-view.png"
+					alt="Character">
+				<i class="corner-mark">04</i>
+				<div class="portfolio-info">
+					<h3>Survivor</h3>
+					<p>3rd Person | Realism</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="character"
+				data-blog="blog/3d_art_character_high_poly.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/characters/angel-textured-view.png"
+				data-media-title="Character">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/characters/angel-textured-view.png"
+					alt="Character">
+				<i class="corner-mark">05</i>
+				<div class="portfolio-info">
+					<h3>Angel</h3>
+					<p>High Poly | Render</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="character"
+				data-blog="blog/3d_art_character_third_person.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/characters/boy-base-render.png"
+				data-media-title="Character">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/characters/boy-base-render.png"
+					alt="Character">
+				<i class="corner-mark">06</i>
+				<div class="portfolio-info">
+					<h3>3rd Person Character</h3>
+					<p>Stylized | 3rd Person</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="character"
+				data-blog="blog/3d_art_character_party.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/characters/male-toon-model.png"
+				data-media-title="Character">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/characters/male-toon-model.png"
+					alt="Character">
+				<i class="corner-mark">07</i>
+				<div class="portfolio-info">
+					<h3>Customizable Character</h3>
+					<p>Stylized | Toon</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="environment"
+				data-blog="blog/3d_art_environment_cliff.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/environment/cliff-textured.png"
+				data-media-title="Environment">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/environment/cliff-textured.png"
+					alt="Environment">
+				<i class="corner-mark">08</i>
+				<div class="portfolio-info">
+					<h3>Simple Cliff</h3>
+					<p>RTS | Low-Poly</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="environment"
+				data-blog="blog/3d_art_environment_terrain.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/environment/terrain-with-assets.png"
+				data-media-title="Environment">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/environment/terrain-with-assets.png"
+					alt="Environment">
+				<i class="corner-mark">09</i>
+				<div class="portfolio-info">
+					<h3>Unity Terrain</h3>
+					<p>RTS | Unity Terrain</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="environment"
+				data-blog="blog/3d_art_environment_studio.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/environment/studio-render.png"
+				data-media-title="Environment">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/environment/studio-render.png"
+					alt="Environment">
+				<i class="corner-mark">10</i>
+				<div class="portfolio-info">
+					<h3>Studio Scene</h3>
+					<p>Shaders | Render</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="environment"
+				data-blog="blog/3d_art_environment_cryo.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/environment/cryo-new-render.png"
+				data-media-title="Environment">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/environment/cryo-new-render.png"
+					alt="Environment">
+				<i class="corner-mark">11</i>
+				<div class="portfolio-info">
+					<h3>Cryo Laboratory</h3>
+					<p>Shaders | Render</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="vehicle"
+				data-blog="blog/3d_art_vehicle_sci-fi_tanks.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/vehicles/electromagneton-render.png"
+				data-media-title="Vehicle">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/vehicles/electromagneton-render.png"
+					alt="Vehicle">
+				<i class="corner-mark">12</i>
+				<div class="portfolio-info">
+					<h3>Sci-Fi Tanks</h3>
+					<p>Shaders | Render</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="vehicle"
+				data-blog="blog/3d_art_vehicle_mammoth_mech.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/vehicles/mammoth-render.png"
+				data-media-title="Vehicle">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/vehicles/mammoth-render.png"
+					alt="Vehicle">
+				<i class="corner-mark">13</i>
+				<div class="portfolio-info">
+					<h3>Mammoth Mech</h3>
+					<p>RTS | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="vehicle"
+				data-blog="blog/3d_art_vehicle_mech.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/vehicles/mech-unity.png"
+				data-media-title="Vehicle">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/vehicles/mech-unity.png"
+					alt="Vehicle">
+				<i class="corner-mark">14</i>
+				<div class="portfolio-info">
+					<h3>Adaptable Mecha</h3>
+					<p>RTS | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="vehicle environment"
+				data-blog="blog/3d_art_multiple_low_poly_scene.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/multiple/low-poly-render.png"
+				data-media-title="Vehicle Environment">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/multiple/low-poly-render.png"
+					alt="Vehicle">
+				<i class="corner-mark">15</i>
+				<div class="portfolio-info">
+					<h3>Low Poly Scene</h3>
+					<p>Low Poly | Render</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="building"
+				data-blog="blog/3d_art_building_base.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/buildings/base-render.png"
+				data-media-title="Building">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/buildings/base-render.png"
+					alt="Building">
+				<i class="corner-mark">16</i>
+				<div class="portfolio-info">
+					<h3>Main Base</h3>
+					<p>RTS | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="building"
+				data-blog="blog/3d_art_building_tower.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/buildings/electric-tower-render.png"
+				data-media-title="Building">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/buildings/electric-tower-render.png"
+					alt="Building">
+				<i class="corner-mark">17</i>
+				<div class="portfolio-info">
+					<h3>Electric Tower</h3>
+					<p>RTS | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="building"
+				data-blog="blog/3d_art_building_power.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/buildings/power-plant-render.png"
+				data-media-title="Building">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/buildings/power-plant-render.png"
+					alt="Building">
+				<i class="corner-mark">18</i>
+				<div class="portfolio-info">
+					<h3>Power Generator</h3>
+					<p>RTS | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="building"
+				data-blog="blog/3d_art_building_museum.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/buildings/museum-model.png"
+				data-media-title="Building">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/buildings/museum-model.png"
+					alt="Building">
+				<i class="corner-mark">19</i>
+				<div class="portfolio-info">
+					<h3>Museum (WIP)</h3>
+					<p>Interior | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="building"
+				data-blog="blog/3d_art_building_pyramid.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/buildings/pyramid-render.png"
+				data-media-title="Building">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/buildings/pyramid-render.png"
+					alt="Building">
+				<i class="corner-mark">20</i>
+				<div class="portfolio-info">
+					<h3>Pyramid</h3>
+					<p>Platformer | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="props"
+				data-blog="blog/3d_art_props_sci_fi_props.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/props/props-unity-inside2.png"
+				data-media-title="Props">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/props/props-unity-inside2.png"
+					alt="Props">
+				<i class="corner-mark">21</i>
+				<div class="portfolio-info">
+					<h3>Sci-Fi Props</h3>
+					<p>RTS | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="props"
+				data-blog="blog/3d_art_props_sci_fi_road.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/props/road-render.png"
+				data-media-title="Props">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/props/road-render.png"
+					alt="Props">
+				<i class="corner-mark">22</i>
+				<div class="portfolio-info">
+					<h3>Sci-Fi Road</h3>
+					<p>RTS | Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="props"
+				data-blog="blog/3d_art_props_sci_fi_props_modular.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/props/modular-parts-render.png"
+				data-media-title="Props">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/props/modular-parts-render.png"
+					alt="Props">
+				<i class="corner-mark">23</i>
+				<div class="portfolio-info">
+					<h3>Modular Props</h3>
+					<p>Blender| Unity</p>
+				</div>
+			</div>
+		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="props"
+				data-blog="blog/3d_art_props_furniture.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/props/furniture-colors.png"
+				data-media-title="Props">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/props/furniture-colors.png"
+					alt="Props">
+				<i class="corner-mark">24</i>
+				<div class="portfolio-info">
+					<h3>Furniture</h3>
+					<p>Blender | Unity</p>
+				</div>
+			</div>
+		</figure>
+
+		<!--
+		<figure class="art-card reveal media-trigger"
+				data-art="environment"
+				data-blog="blog/3d_design.html"
 				data-media-type="youtube"
 				data-media-src="YOUR_VIDEO_ID"
 				data-media-title="Environment Breakdown">
-			<div class="art-image">
+			<div class="portfolio-image">
 				<span>ENVIRONMENT / BREAKDOWN</span>
+				<i class="corner-mark">03</i>
+				<div class="portfolio-info">
+					<h3>Environment Breakdown</h3>
+					<p>Video / Breakdown</p>
+				</div>
 			</div>
-			<figcaption>
-				<b>Environment</b>
-				<small>Video / Breakdown</small>
-			</figcaption>
-		</figure>
-		<figure class="art-card reveal media-trigger"
-				data-media-type="image"
-				data-media-src="assets/3d/environment.jpg"
-				data-media-title="Environment">
-			<div class="art-image">
-				<span>ENVIRONMENT / IN-GAME</span>
-			</div>
-			<figcaption>
-				<b>Environment</b>
-				<small>In-game / Unity</small>
-			</figcaption>
-		</figure>
-		<figure class="art-card reveal media-trigger"
-				data-media-type="image"
-				data-media-src="assets/3d/vehicle.jpg"
-				data-media-title="Vehicle">
-			<div class="art-image">
-				<span>VEHICLE / RENDER</span>
-			</div>
-			<figcaption>
-				<b>Vehicle</b>
-				<small>Render / Hard Surface</small>
-			</figcaption>
-		</figure>
-		<figure class="art-card reveal media-trigger"
-				data-media-type="image"
-				data-media-src="assets/3d/props.jpg"
-				data-media-title="Props">
-			<div class="art-image">
-				<span>PROP / SUBSTANCE</span>
-			</div>
-			<figcaption>
-				<b>Props</b>
-				<small>Substance Painter</small>
-			</figcaption>
-		</figure>
+		</figure>-->
+
 	</div>
 </section>
 
@@ -459,7 +966,30 @@
 		<h2>ABOUT</h2>
 	</div>
 	
-    <div class="about-layout"><div class="about-image image-placeholder reveal"><span>YOUR PHOTO</span></div><div class="about-content reveal"><p class="about-intro">I’m <strong>Davylink</strong>, a Technical Artist and 3D Artist focused on real-time graphics, game development and the space between art and technology.</p><p>Use this area for your biography, experience and approach to creating games and digital experiences.</p><div class="about-buttons"><a href="#" class="button">DOWNLOAD RESUME</a><a href="#contact" class="button button-outline">CONTACT ME</a></div></div></div>
+    <div class="about-layout">
+		
+		<div class="scanner-container">
+		  <img class="scan-img img-1" src="assets/about-0.png" alt="Imagen 1">
+		  <img class="scan-img img-2" src="assets/about-1.png" alt="Imagen 2">
+		  <img class="scan-img img-3" src="assets/about-2.png" alt="Imagen 3">
+		  <img class="scan-img img-4" src="assets/about-3.png" alt="Imagen 4">
+		  
+		  <div class="laser"></div>
+		</div>
+		<!--<div class="about-image image-placeholder reveal">
+			<span>YOUR PHOTO</span>
+		</div>-->
+		<div class="about-content reveal">
+			<p class="about-intro">I’m <strong>Davylink</strong>, a Technical Artist and 3D Artist focused on real-time graphics, game development and the space between art and technology.</p>
+			<p>Use this area for your biography, experience and approach to creating games and digital experiences.</p>
+			<div class="about-buttons">
+				<a href="#" class="button">DOWNLOAD RESUME</a>
+				<a href="#contact" class="button button-outline">CONTACT ME</a>
+			</div>
+		</div>
+	</div>
+	
+
     <div class="skills-area">
 
 		<div class="skills-left">
@@ -529,26 +1059,29 @@
 
 			<div class="skill-list skills-grid">
 
-				<span><i>+</i> Technical Art</span>
-				<span><i>+</i> Tools Development</span>
+				<span><img class="skill-img" src="assets/skills/technical-art.png"/> Technical Art</span>
+				<span><img class="skill-img" src="assets/skills/tool-development.png"/> Tools Development</span>
 				
-				<span><i>+</i> Materials</span>				
-				<span><i>+</i> Shader Development</span>
+				<span><img class="skill-img" src="assets/skills/materials.png"/> Materials</span>				
+				<span><img class="skill-img" src="assets/skills/shaders.png"/> Shader Development</span>
 				
-				<span><i>+</i> VFX Creation</span>
-				<span><i>+</i> Real-time Rendering</span>
-
-				<span><i>+</i> Optimization & Performance</span>
-				<span><i>+</i> Technical Problem Solving</span>
-
-				<span><i>+</i> Lighting</span>
-				<span><i>+</i> Environment Art</span>
-
-				<span><i>+</i> Game Development</span>
-				<span><i>+</i> Asset Integration</span>
-
-				<span><i>+</i> Procedural Workflows</span>
-				<span><i>+</i> Pipeline Development</span>
+				<span><img class="skill-img" src="assets/skills/vfx.png"/> VFX Creation</span>
+				<span><img class="skill-img" src="assets/skills/real-time.png"/> Real-time Rendering</span>
+				
+				<span><img class="skill-img" src="assets/skills/retopology.png"/> Retopology</span>
+				<span><img class="skill-img" src="assets/skills/uv-mapping.png"/> UV Mapping</span>
+				
+				<span><img class="skill-img" src="assets/skills/optimization.png"/> Optimization & Performance</span>
+				<span><img class="skill-img" src="assets/skills/problem-solver.png"/> Technical Problem Solving</span>
+				
+				<span><img class="skill-img" src="assets/skills/lightning.png"/> Lighting</span>
+				<span><img class="skill-img" src="assets/skills/environment.png"/> Environment Art</span>
+				
+				<span><img class="skill-img" src="assets/skills/game-development.png"/> Game Development</span>
+				<span><img class="skill-img" src="assets/skills/asset-integration.png"/> Asset Integration</span>
+				
+				<span><img class="skill-img" src="assets/skills/procedural.png"/> Procedural Workflows</span>
+				<span><img class="skill-img" src="assets/skills/pipeline.png"/> Pipeline Development</span>
 
 			</div>
 		</div>
@@ -576,7 +1109,7 @@
         </a>
     </div>
     <div class="social-links">
-        <a href="#" aria-label="LinkedIn">
+        <a target="_blank" href="https://www.linkedin.com/in/davylink/" aria-label="LinkedIn">
             <img class="social-link-image" src="assets/icons/linkedin.png"/>
         </a>
         <a href="#" aria-label="YouTube">
@@ -595,7 +1128,7 @@
 
 <footer class="site-footer"><span>© 2026 Davylink</span></footer>
 
-<div class="modal"
+<!--<div class="modal"
      id="mediaModal"
      aria-hidden="true">
     <div class="modal-backdrop"></div>
@@ -607,6 +1140,40 @@
         </button>
         <div class="modal-content" id="modalContent"></div>
     </div>
+</div>-->
+
+<!-- =====================================
+     CASE STUDY MODAL
+====================================== -->
+
+<div class="case-study-modal"
+     id="caseStudyModal"
+     aria-hidden="true">
+
+    <div class="case-study-modal-backdrop"></div>
+
+    <div class="case-study-modal-window">
+
+        <button
+            class="case-study-modal-close"
+            id="caseStudyModalClose"
+            type="button"
+            aria-label="Cerrar">
+            ×
+        </button>
+
+        <div
+            class="case-study-modal-content"
+            id="caseStudyContent">
+
+            <!--
+                External project HTML is loaded here.
+            -->
+
+        </div>
+
+    </div>
+
 </div>
 
 <script>
@@ -676,9 +1243,12 @@
 
 			artItems.forEach(item => {
 
+				const categories =
+					(item.dataset.art || '').split(' ');
+
 				const visible =
 					filter === 'all' ||
-					item.dataset.art === filter;
+					categories.includes(filter);
 
 				item.classList.toggle(
 					'is-hidden',
@@ -895,276 +1465,1410 @@
 		});
 
 	});
+	
+	/* =====================================
+	   CASE STUDY MODAL
+	====================================== */
+
+	const caseStudyModal = document.getElementById('caseStudyModal');
+	const caseStudyContent = document.getElementById('caseStudyContent');
+	const caseStudyClose = document.getElementById('caseStudyModalClose');
+	const caseStudyBackdrop = caseStudyModal
+		? caseStudyModal.querySelector('.case-study-modal-backdrop')
+		: null;
+
+	let currentCarousel = null;
 
 
-	/* =========================================================
-	   MEDIA MODAL
-	   IMAGE + YOUTUBE
-	   ========================================================= */
+	/* =====================================
+	   OPEN CASE STUDY
+	====================================== */
 
-	const modal =
-		document.getElementById('mediaModal');
+	async function openCaseStudy(url, initialMedia = 0) {
 
-	const modalContent =
-		document.getElementById('modalContent');
+		if (!caseStudyModal || !caseStudyContent || !url) {
+			return;
+		}
 
-	const modalClose =
-		document.querySelector('.modal-close');
+		try {
 
-	const modalBackdrop =
-		document.querySelector('.modal-backdrop');
+			/* Loading */
+
+			caseStudyContent.innerHTML =
+				'<div class="case-study-loading">' +
+					'<span>LOADING PROJECT</span>' +
+				'</div>';
 
 
-	function openMediaModal(
-		type,
-		source,
-		title = ''
-	) {
+			caseStudyModal.classList.add('is-open');
+			caseStudyModal.setAttribute('aria-hidden', 'false');
 
-		modalContent.innerHTML = '';
+			document.body.classList.add('modal-open');
 
-		if (type === 'image') {
 
-			const image =
-				document.createElement('img');
+			/* Fetch project */
 
-			image.src = source;
+			const response = await fetch(url, {
+				cache: 'no-cache'
+			});
 
-			image.alt = title;
+			if (!response.ok) {
+				throw new Error(
+					'Unable to load ' + url
+				);
+			}
 
-			modalContent.appendChild(image);
+
+			const html = await response.text();
+
+
+			/* Parse HTML */
+
+			const parser = new DOMParser();
+
+			const doc =
+				parser.parseFromString(
+					html,
+					'text/html'
+				);
+
+
+			const project =
+				doc.querySelector('.case-study');
+
+
+			if (!project) {
+
+				throw new Error(
+					'The project file does not contain .case-study'
+				);
+
+			}
+
+
+			/* Clean previous carousel */
+
+			if (currentCarousel) {
+
+				currentCarousel.destroy();
+				currentCarousel = null;
+
+			}
+
+
+			/* Resolve relative media paths */
+
+			const projectBaseUrl =
+				new URL(
+					url,
+					window.location.href
+				);
+
+
+			project
+				.querySelectorAll('img')
+				.forEach(image => {
+
+					const source =
+						image.getAttribute('src');
+
+					if (source) {
+
+						image.setAttribute(
+							'src',
+							new URL(
+								source,
+								projectBaseUrl
+							).href
+						);
+
+					}
+
+				});
+
+
+			project
+				.querySelectorAll(
+					'.case-study-media-data [data-type="video"]'
+				)
+				.forEach(item => {
+
+					const source =
+						item.getAttribute('data-src');
+
+					if (source) {
+
+						item.setAttribute(
+							'data-src',
+							new URL(
+								source,
+								projectBaseUrl
+							).href
+						);
+
+					}
+
+				});
+
+
+			/* Insert project */
+
+			caseStudyContent.innerHTML = '';
+
+			caseStudyContent.appendChild(
+				project
+			);
+			
+			setupVideoHover(project);
+
+
+			/* Initialise carousel */
+
+			initialiseCaseStudyCarousel(
+				project,
+				parseInt(initialMedia, 10) || 0
+			);
+
+
+			/* Initialise project media */
+
+			initialiseCaseStudyMedia(
+				project
+			);
+
+
+			/* Reset modal scroll */
+
+			const modalWindow =
+				caseStudyModal.querySelector(
+					'.case-study-modal-window'
+				);
+
+
+			if (modalWindow) {
+
+				modalWindow.scrollTo({
+					top: 0,
+					behavior: 'auto'
+				});
+
+			}
+
+		} catch (error) {
+
+			console.error(error);
+
+
+			caseStudyContent.innerHTML =
+				'<div class="case-study-error">' +
+					'<span>ERROR</span>' +
+					'<p>' +
+						'No se ha podido cargar el contenido ' +
+						'de este proyecto.' +
+					'</p>' +
+				'</div>';
 
 		}
 
-		else if (type === 'youtube') {
-
-			const iframe =
-				document.createElement('iframe');
-
-			iframe.src =
-				`https://www.youtube.com/embed/${source}?autoplay=1&rel=0`;
-
-			iframe.title =
-				title || 'Davylink video';
-
-			iframe.allow =
-				'autoplay; encrypted-media; picture-in-picture';
-
-			iframe.allowFullscreen = true;
-
-			const frame =
-				document.createElement('div');
-
-			frame.className =
-				'youtube-frame';
-
-			frame.appendChild(iframe);
-
-			modalContent.appendChild(frame);
-		}
-
-		modal.classList.add('open');
-
-		modal.setAttribute(
-			'aria-hidden',
-			'false'
-		);
-
-		document.body.classList.add(
-			'modal-open'
-		);
 	}
 
 
-	function closeMediaModal() {
+	/* =====================================
+	   CLOSE CASE STUDY
+	====================================== */
 
-		modal.classList.remove('open');
+	function closeCaseStudy() {
 
-		modal.setAttribute(
+		if (!caseStudyModal) {
+			return;
+		}
+
+
+		caseStudyModal.classList.remove(
+			'is-open'
+		);
+
+		caseStudyModal.setAttribute(
 			'aria-hidden',
 			'true'
 		);
 
-		/*
-		   Removing the iframe completely also
-		   stops YouTube playback.
-		*/
-
-		modalContent.innerHTML = '';
 
 		document.body.classList.remove(
 			'modal-open'
 		);
+
+
+		if (currentCarousel) {
+
+			currentCarousel.destroy();
+			currentCarousel = null;
+
+		}
+
+
+		setTimeout(() => {
+
+			if (
+				!caseStudyModal.classList.contains(
+					'is-open'
+				)
+			) {
+
+				caseStudyContent.innerHTML = '';
+
+			}
+
+		}, 300);
+
 	}
 
 
-	/* =========================================================
-	   MEDIA TRIGGERS
-	   ========================================================= */
+	/* =====================================
+	   CASE STUDY TRIGGERS
+	====================================== */
 
 	document
-		.querySelectorAll('.media-trigger')
+		.querySelectorAll('[data-blog]')
 		.forEach(trigger => {
 
 			trigger.addEventListener(
 				'click',
 				event => {
 
-					event.preventDefault();
+					const blogUrl =
+						trigger.dataset.blog;
 
-					const type =
-						trigger.dataset.mediaType;
+					const initialMedia =
+						trigger.dataset.media || 0;
 
-					const source =
-						trigger.dataset.mediaSrc;
 
-					const title =
-						trigger.dataset.mediaTitle || '';
-
-					if (!type || !source) {
+					if (!blogUrl) {
 						return;
 					}
 
-					openMediaModal(
-						type,
-						source,
-						title
+
+					/*
+					 * El elemento tiene data-blog,
+					 * por lo que debe abrir el Case Study.
+					 *
+					 * Cancelamos cualquier href,
+					 * incluidos #hero y #work.
+					 */
+
+					event.preventDefault();
+					event.stopPropagation();
+
+
+					openCaseStudy(
+						blogUrl,
+						initialMedia
 					);
+
 				}
 			);
 
 		});
 
 
-	/* =========================================================
-	   SHOWREEL
-	   ========================================================= */
+	/* =====================================
+	   CLOSE BUTTON
+	====================================== */
 
-	const showreelButton =
-		document.querySelector(
-			'[data-showreel]'
-		);
+	if (caseStudyClose) {
 
-	if (showreelButton) {
-
-		showreelButton.addEventListener(
+		caseStudyClose.addEventListener(
 			'click',
-			() => {
-
-				openMediaModal(
-					'youtube',
-					'YOUR_VIDEO_ID',
-					'Davylink Showreel'
-				);
-
-			}
+			closeCaseStudy
 		);
+
 	}
 
 
-	/* =========================================================
-	   CLOSE MODAL
-	   ========================================================= */
+	/* =====================================
+	   BACKDROP
+	====================================== */
 
-	modalClose.addEventListener(
-		'click',
-		closeMediaModal
-	);
+	if (caseStudyBackdrop) {
 
-	modalBackdrop.addEventListener(
-		'click',
-		closeMediaModal
-	);
+		caseStudyBackdrop.addEventListener(
+			'click',
+			closeCaseStudy
+		);
+
+	}
+
+
+	/* =====================================
+	   ESCAPE KEY
+	====================================== */
 
 	document.addEventListener(
 		'keydown',
 		event => {
 
-			if (event.key === 'Escape') {
-				closeMediaModal();
+			if (
+				event.key === 'Escape' &&
+				caseStudyModal &&
+				caseStudyModal.classList.contains(
+					'is-open'
+				)
+			) {
+
+				closeCaseStudy();
+
 			}
 
 		}
 	);
-	
-	
-	/* ---------- WORK ACCORDION ANIMATION ---------- */
 
-	const workRows = document.querySelectorAll('.work-row');
+
+	/* =====================================
+	   CAROUSEL
+	====================================== */
+
+	function initialiseCaseStudyCarousel(
+		project,
+		initialMedia = 0
+	) {
+
+		const mediaData =
+			project.querySelector(
+				'.case-study-media-data'
+			);
+
+
+		if (!mediaData) {
+			return;
+		}
+
+
+		const items =
+			Array.from(
+				mediaData.querySelectorAll(
+					':scope > figure'
+				)
+			);
+
+
+		if (!items.length) {
+			return;
+		}
+
+
+		/* =================================
+		   CREATE CAROUSEL
+		================================= */
+
+		const carousel =
+			document.createElement(
+				'section'
+			);
+
+
+		carousel.className =
+			'case-study-carousel';
+
+
+		carousel.innerHTML =
+			'<div class="carousel-main">' +
+
+				'<button ' +
+					'class="carousel-prev" ' +
+					'type="button" ' +
+					'aria-label="Anterior">' +
+					'‹' +
+				'</button>' +
+
+				'<div class="carousel-stage">' +
+				'</div>' +
+
+				'<button ' +
+					'class="carousel-next" ' +
+					'type="button" ' +
+					'aria-label="Siguiente">' +
+					'›' +
+				'</button>' +
+
+			'</div>' +
+
+			'<div class="carousel-info">' +
+
+				'<span class="carousel-counter">' +
+					'01 / 01' +
+				'</span>' +
+				'<div class="carousel-thumbnails">' +
+				'</div>' +
+				'<span class="carousel-caption">' +
+				'</span>' +
+
+			'</div>' ;
+
+
+		/* =================================
+		   INSERT CAROUSEL
+		================================= */
+
+		const header =
+			project.querySelector(
+				'.case-study-header'
+			);
+
+
+		if (header) {
+
+			header.after(
+				carousel
+			);
+
+		} else {
+
+			project.prepend(
+				carousel
+			);
+
+		}
+
+
+		/* =================================
+		   ELEMENTS
+		================================= */
+
+		const stage =
+			carousel.querySelector(
+				'.carousel-stage'
+			);
+
+
+		const thumbnails =
+			carousel.querySelector(
+				'.carousel-thumbnails'
+			);
+
+
+		const previous =
+			carousel.querySelector(
+				'.carousel-prev'
+			);
+
+
+		const next =
+			carousel.querySelector(
+				'.carousel-next'
+			);
+
+
+		const counter =
+			carousel.querySelector(
+				'.carousel-counter'
+			);
+
+
+		const caption =
+			carousel.querySelector(
+				'.carousel-caption'
+			);
+
+
+		/* =================================
+		   CURRENT INDEX
+		================================= */
+
+		let currentIndex =
+			Math.max(
+				0,
+				Math.min(
+					initialMedia,
+					items.length - 1
+				)
+			);
+
+
+		/* =================================
+		   BUILD THUMBNAILS
+		================================= */
+
+		items.forEach(
+			(item, index) => {
+
+				const thumbnail =
+					document.createElement(
+						'button'
+					);
+
+
+				thumbnail.type =
+					'button';
+
+
+				thumbnail.className =
+					'carousel-thumbnail';
+
+
+				thumbnail.dataset.index =
+					index;
+
+
+				const image =
+					item.querySelector(
+						'img'
+					);
+
+
+				const itemCaption =
+					item.querySelector(
+						'figcaption'
+					);
+
+
+				/* Image thumbnail */
+
+				if (image) {
+
+					const thumbImage =
+						document.createElement(
+							'img'
+						);
+
+
+					thumbImage.src =
+						image.src;
+
+
+					thumbImage.alt =
+						image.alt || '';
+
+
+					thumbImage.loading =
+						'lazy';
+
+
+					thumbnail.appendChild(
+						thumbImage
+					);
+
+				}
+
+
+				/* Video thumbnail */
+
+				else {
+
+					const videoId =
+						item.dataset.videoId;
+
+
+					const customThumbnail =
+						item.dataset.thumbnail;
+
+
+					let thumbnailSource =
+						customThumbnail;
+
+
+					/*
+					 * YouTube thumbnail
+					 *
+					 * If no custom image is
+					 * specified, use YouTube's
+					 * thumbnail automatically.
+					 */
+
+					if (!thumbnailSource && videoId) {
+
+						thumbnailSource =
+							'https://img.youtube.com/vi/' +
+							videoId +
+							'/hqdefault.jpg';
+
+					}
+
+
+					if (thumbnailSource) {
+
+						const thumbImage =
+							document.createElement(
+								'img'
+							);
+
+
+						thumbImage.src =
+							thumbnailSource;
+
+
+						thumbImage.alt =
+							itemCaption
+								? itemCaption.textContent.trim()
+								: '';
+
+
+						thumbImage.loading =
+							'lazy';
+
+
+						thumbnail.appendChild(
+							thumbImage
+						);
+
+					}
+
+
+					/* Play icon */
+
+					const playIcon =
+						document.createElement(
+							'span'
+						);
+
+
+					playIcon.className =
+						'carousel-thumbnail-video';
+
+
+					playIcon.textContent =
+						'▶';
+
+
+					thumbnail.appendChild(
+						playIcon
+					);
+
+				}
+
+
+				/* Caption */
+
+				if (itemCaption) {
+
+					const label =
+						document.createElement(
+							'span'
+						);
+
+
+					label.textContent =
+						itemCaption.textContent.trim();
+
+
+					/*thumbnail.appendChild(
+						label
+					);*/
+
+				}
+
+
+				/* Click */
+
+				thumbnail.addEventListener(
+					'click',
+					() => {
+
+						showCarouselMedia(
+							index
+						);
+
+					}
+				);
+
+
+				thumbnails.appendChild(
+					thumbnail
+				);
+
+			}
+		);
+
+
+		/* =================================
+		   SHOW MEDIA
+		================================= */
+
+		function showCarouselMedia(index) {
+
+			currentIndex =
+				(
+					index +
+					items.length
+				) % items.length;
+
+
+			const item =
+				items[currentIndex];
+
+
+			/*
+			 * Fade out current media
+			 */
+
+			stage.classList.add(
+				'is-changing'
+			);
+
+
+			/*
+			 * Change media after fade out
+			 */
+
+			setTimeout(
+				() => {
+
+					stage.innerHTML = '';
+
+
+					const type =
+						item.dataset.type ||
+						'image';
+
+
+					/* =================================
+					   IMAGE
+					================================= */
+
+					if (type === 'image') {
+
+						const image =
+							item.querySelector(
+								'img'
+							);
+
+
+						if (image) {
+
+							const media =
+								document.createElement(
+									'img'
+								);
+
+
+							media.src =
+								image.src;
+
+
+							media.alt =
+								image.alt || '';
+
+
+							media.className =
+								'carousel-active-image';
+
+
+							stage.appendChild(
+								media
+							);
+
+						}
+
+					}
+
+
+					/* =================================
+					   YOUTUBE
+					================================= */
+
+					else if (type === 'youtube') {
+
+						const videoId =
+							item.dataset.videoId;
+
+
+						if (videoId) {
+
+							const iframe =
+								document.createElement(
+									'iframe'
+								);
+
+
+							iframe.src =
+								'https://www.youtube.com/embed/' +
+								videoId +
+								'?rel=0';
+
+
+							const figureCaption =
+								item.querySelector(
+									'figcaption'
+								);
+
+
+							iframe.title =
+								figureCaption
+									? figureCaption.textContent.trim()
+									: 'Video';
+
+
+							iframe.allow =
+								'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+
+							iframe.allowFullscreen =
+								true;
+
+
+							stage.appendChild(
+								iframe
+							);
+
+						}
+
+					}
+
+
+					/* =================================
+					   LOCAL VIDEO
+					================================= */
+
+					else if (type === 'video') {
+
+						const videoSrc =
+							item.dataset.src;
+
+
+						if (videoSrc) {
+
+							const video =
+								document.createElement(
+									'video'
+								);
+
+
+							video.src =
+								videoSrc;
+
+
+							video.controls =
+								true;
+
+
+							video.playsInline =
+								true;
+
+
+							stage.appendChild(
+								video
+							);
+
+						}
+
+					}
+
+
+					/* =================================
+					   CAPTION
+					================================= */
+
+					const itemCaption =
+						item.querySelector(
+							'figcaption'
+						);
+
+
+					caption.textContent =
+						itemCaption
+							? itemCaption.textContent.trim()
+							: '';
+
+
+					/* =================================
+					   COUNTER
+					================================= */
+
+					counter.textContent =
+						String(
+							currentIndex + 1
+						).padStart(
+							2,
+							'0'
+						) +
+						' / ' +
+						String(
+							items.length
+						).padStart(
+							2,
+							'0'
+						);
+
+
+					/* =================================
+					   ACTIVE THUMBNAIL
+					================================= */
+
+					thumbnails
+						.querySelectorAll(
+							'.carousel-thumbnail'
+						)
+						.forEach(
+							(
+								thumbnail,
+								thumbnailIndex
+							) => {
+
+								thumbnail.classList.toggle(
+									'is-active',
+									thumbnailIndex ===
+									currentIndex
+								);
+
+							}
+						);
+
+
+					/* =================================
+					   SCROLL ACTIVE THUMBNAIL
+					================================= */
+
+					const activeThumbnail =
+						thumbnails.querySelector(
+							'.carousel-thumbnail.is-active'
+						);
+
+
+					if (activeThumbnail) {
+
+						activeThumbnail.scrollIntoView({
+							behavior: 'smooth',
+							block: 'nearest',
+							inline: 'center'
+						});
+
+					}
+
+
+					/*
+					 * Force browser to register
+					 * the new media before fading in.
+					 */
+
+					requestAnimationFrame(
+						() => {
+
+							stage.classList.remove(
+								'is-changing'
+							);
+
+						}
+					);
+
+				},
+				150
+			);
+
+		}
+
+
+		/* =================================
+		   PREVIOUS
+		================================= */
+
+		previous.addEventListener(
+			'click',
+			() => {
+
+				showCarouselMedia(
+					currentIndex - 1
+				);
+
+			}
+		);
+
+
+		/* =================================
+		   NEXT
+		================================= */
+
+		next.addEventListener(
+			'click',
+			() => {
+
+				showCarouselMedia(
+					currentIndex + 1
+				);
+
+			}
+		);
+
+
+		/* =================================
+		   KEYBOARD NAVIGATION
+		================================= */
+
+		const keyboardHandler =
+			event => {
+
+				if (
+					!caseStudyModal ||
+					!caseStudyModal.classList.contains(
+						'is-open'
+					)
+				) {
+					return;
+				}
+
+
+				if (
+					event.key ===
+					'ArrowLeft'
+				) {
+
+					showCarouselMedia(
+						currentIndex - 1
+					);
+
+				}
+
+
+				else if (
+					event.key ===
+					'ArrowRight'
+				) {
+
+					showCarouselMedia(
+						currentIndex + 1
+					);
+
+				}
+
+			};
+
+
+		document.addEventListener(
+			'keydown',
+			keyboardHandler
+		);
+
+
+		/* =================================
+		   DESTROY
+		================================= */
+
+		currentCarousel = {
+
+			destroy() {
+
+				document.removeEventListener(
+					'keydown',
+					keyboardHandler
+				);
+
+			}
+
+		};
+
+
+		/* =================================
+		   INITIAL MEDIA
+		================================= */
+
+		showCarouselMedia(
+			currentIndex
+		);
+
+	}
+
+
+	/* =====================================
+	   BLOG MEDIA
+	====================================== */
+
+	function initialiseCaseStudyMedia(
+		project
+	) {
+
+		/*
+		 * Blog images are lazy loaded.
+		 */
+
+		project
+			.querySelectorAll(
+				'.case-study-body img'
+			)
+			.forEach(
+				image => {
+
+					image.loading =
+						'lazy';
+
+				}
+			);
+
+	}
+
+
+	/* =========================================================
+	   WORK ACCORDION ANIMATION
+	========================================================= */
+
+	const workRows =
+		document.querySelectorAll(
+			'.work-row'
+		);
+
 
 	function openWorkRow(row) {
-		const panel = row.querySelector('.work-panel');
 
-		row.classList.add('is-open');
-		row.open = true;
+		const panel =
+			row.querySelector(
+				'.work-panel'
+			);
 
-		// Medimos la altura real del contenido
-		panel.style.height = panel.scrollHeight + 'px';
 
-		// Una vez terminada la animación dejamos la altura automática
-		panel.addEventListener('transitionend', function handler(e) {
-			if (e.propertyName === 'height' && row.classList.contains('is-open')) {
-				panel.style.height = 'auto';
-				panel.removeEventListener('transitionend', handler);
+		if (!panel) {
+			return;
+		}
+
+
+		row.classList.add(
+			'is-open'
+		);
+
+
+		row.open =
+			true;
+
+
+		/* Measure real content height */
+
+		panel.style.height =
+			panel.scrollHeight + 'px';
+
+
+		panel.addEventListener(
+			'transitionend',
+			function handler(event) {
+
+				if (
+					event.propertyName ===
+						'height' &&
+					row.classList.contains(
+						'is-open'
+					)
+				) {
+
+					panel.style.height =
+						'auto';
+
+
+					panel.removeEventListener(
+						'transitionend',
+						handler
+					);
+
+				}
+
 			}
-		});
+		);
+
 	}
+
 
 	function closeWorkRow(row) {
-		const panel = row.querySelector('.work-panel');
 
-		// Si estaba en auto, primero fijamos su altura actual
-		panel.style.height = panel.scrollHeight + 'px';
+		const panel =
+			row.querySelector(
+				'.work-panel'
+			);
 
-		requestAnimationFrame(() => {
-			row.classList.remove('is-open');
-			panel.style.height = '0px';
-		});
 
-		panel.addEventListener('transitionend', function handler(e) {
-			if (e.propertyName === 'height' && !row.classList.contains('is-open')) {
-				row.open = false;
-				panel.removeEventListener('transitionend', handler);
+		if (!panel) {
+			return;
+		}
+
+
+		/* Fix current height */
+
+		panel.style.height =
+			panel.scrollHeight + 'px';
+
+
+		requestAnimationFrame(
+			() => {
+
+				row.classList.remove(
+					'is-open'
+				);
+
+
+				panel.style.height =
+					'0px';
+
 			}
-		});
+		);
+
+
+		panel.addEventListener(
+			'transitionend',
+			function handler(event) {
+
+				if (
+					event.propertyName ===
+						'height' &&
+					!row.classList.contains(
+						'is-open'
+					)
+				) {
+
+					row.open =
+						false;
+
+
+					panel.removeEventListener(
+						'transitionend',
+						handler
+					);
+
+				}
+
+			}
+		);
+
 	}
 
-	workRows.forEach(row => {
-		const summary = row.querySelector('summary');
 
-		summary.addEventListener('click', event => {
-			event.preventDefault();
+	/* =================================
+	   WORK ROW EVENTS
+	================================= */
 
-			const isOpen = row.classList.contains('is-open');
+	workRows.forEach(
+		row => {
 
-			// Cerramos todos los demás
-			workRows.forEach(otherRow => {
-				if (otherRow !== row && otherRow.classList.contains('is-open')) {
-					closeWorkRow(otherRow);
-				}
-			});
+			const summary =
+				row.querySelector(
+					'summary'
+				);
 
-			// Abrimos/cerramos el seleccionado
-			if (!isOpen) {
-				openWorkRow(row);
-			} else {
-				closeWorkRow(row);
+
+			if (!summary) {
+				return;
 			}
-		});
-	});
 
-	// Abrimos inicialmente el primer elemento
-	const firstWorkRow = workRows[0];
+
+			summary.addEventListener(
+				'click',
+				event => {
+
+					event.preventDefault();
+
+
+					const isOpen =
+						row.classList.contains(
+							'is-open'
+						);
+
+
+					/* Close all other rows */
+
+					workRows.forEach(
+						otherRow => {
+
+							if (
+								otherRow !== row &&
+								otherRow.classList.contains(
+									'is-open'
+								)
+							) {
+
+								closeWorkRow(
+									otherRow
+								);
+
+							}
+
+						}
+					);
+
+
+					/* Open / close selected row */
+
+					if (!isOpen) {
+
+						openWorkRow(
+							row
+						);
+
+					}
+
+					else {
+
+						closeWorkRow(
+							row
+						);
+
+					}
+
+				}
+			);
+
+		}
+	);
+
+
+	/* =================================
+	   OPEN FIRST WORK ROW
+	================================= */
+
+	const firstWorkRow =
+		workRows[0];
+
 
 	if (firstWorkRow) {
-		firstWorkRow.classList.add('is-open');
 
-		const firstPanel = firstWorkRow.querySelector('.work-panel');
+		firstWorkRow.classList.add(
+			'is-open'
+		);
 
-		requestAnimationFrame(() => {
-			firstPanel.style.height = 'auto';
+
+		firstWorkRow.open =
+			true;
+
+
+		const firstPanel =
+			firstWorkRow.querySelector(
+				'.work-panel'
+			);
+
+
+		if (firstPanel) {
+
+			requestAnimationFrame(
+				() => {
+
+					firstPanel.style.height =
+						'auto';
+
+				}
+			);
+
+		}
+
+	}
+	
+	
+	/* =================================
+	   PLAY VIDEOS ON HOVER
+	================================= */
+	
+	function setupVideoHover(container = document) {
+
+		container.querySelectorAll('.shader-hover-video').forEach(video => {
+
+			if (video.dataset.hoverSetup === 'true') {
+				return;
+			}
+
+			video.dataset.hoverSetup = 'true';
+
+			video.addEventListener('mouseenter', () => {
+				video.play().catch(() => {});
+			});
+
+			video.addEventListener('mouseleave', () => {
+				video.pause();
+			});
+
 		});
 	}
+	
+	setupVideoHover();
 	
 
 </script>

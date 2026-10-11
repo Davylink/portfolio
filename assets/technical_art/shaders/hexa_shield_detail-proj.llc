@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'hexa_shield_detail.mp4',
+  cutSegments: [
+    {
+      start: 0,
+      end: 6.3559634796874995,
+      name: '',
+      selected: true,
+    },
+  ],
+}
