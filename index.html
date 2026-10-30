@@ -33,9 +33,21 @@
 
 <main id="top">
     <!-- Background video placeholder: replace src/poster with your own showreel footage. -->
-    <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
-        <source src="assets/hero-background.mov" type="video/mp4">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/portfolio-showreel-poster.png" aria-hidden="true">
+        <source src="assets/portfolio-showreel-low.mp4" type="video/mp4">
     </video>
+	
+	<!--<div class="hero-video youtube-media">
+		<iframe
+			src="https://www.youtube.com/embed/YDKhydv-SxQ?autoplay=1&loop=1&mute=1"
+			title="RTS Gameplay"
+			loading="lazy"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen>
+		</iframe>
+	</div>-->
+	
     <div class="hero-overlay"></div>
 
 <section class="hero reveal">
@@ -214,16 +226,17 @@
         <details class="work-row" open>
 			<summary>
 				<span class="work-index">01</span>
-				<strong>RTS Project</strong>
+				<strong>Classic Strategy</strong>
 				<span class="work-type">REAL-TIME STRATEGY</span>
 				<span class="accordion-plus">+</span>
 			</summary>
 			<div class="work-panel">
 				<div class="work-panel-main">
 					<div class="media-placeholder media-trigger">
-						<video class="work-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
+						<img class="work-video" src="http://localhost/portfolio/assets/work/rts_project/rts-banner.png" alt="3D platformer main gameplay view">
+						<!--<video class="work-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
 							<source src="assets/hero-background.mov" type="video/mp4">
-						</video>
+						</video>-->
 					</div>
 					<div>
 						<h3>RTS Project</h3>
@@ -250,11 +263,15 @@
 			<div class="work-panel">
 				<div class="work-panel-main">
 					<div class="media-placeholder media-trigger">
-						<span>VIDEO PLACEHOLDER</span>
+						<img class="work-video" src="http://localhost/portfolio/assets/work/3d_platformer/3dp-banner.png" alt="3D platformer main gameplay view">
+						<!--<video class="work-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
+							<source src="assets/work/turn_based_strategy/turn-based-gameplay.mp4" type="video/mp4">
+						</video>-->
 					</div>
 					<div>
-						<h3>RTS Project</h3>
-						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
+						<h3>3D Platformer Project</h3>
+						<p>A 3D platform game with a stylized design based on a fantasy environment that takes place in space and in a variety of original planets. 
+						It has various movement, jumping and skill mechanics that make it an ideal skill game for the little ones.</p>
 						<div class="case-study-trigger">
 							<a href="#"							
 								data-blog="blog/work/3d_platformer.html"
@@ -270,18 +287,18 @@
         <details class="work-row">
 			<summary>
 				<span class="work-index">03</span>
-				<strong>Party Game</strong>
+				<strong>Online Multiplayer Game</strong>
 				<span class="work-type">ONLINE MULTIPLAYER</span>
 				<span class="accordion-plus">+</span>
 			</summary>
 			<div class="work-panel">
 				<div class="work-panel-main">
 					<div class="media-placeholder media-trigger">
-						<span>VIDEO PLACEHOLDER</span>
+						<img class="work-video" src="http://localhost/portfolio/assets/work/party_game/party-banner.png" alt="3D platformer main gameplay view">
 					</div>
 					<div>
-						<h3>RTS Project</h3>
-						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
+						<h3>Multiplayer Game Project</h3>
+						<p>An asymmetric online multiplayer game where a team of thieves infiltrates a museum to steal high-value artifacts while security guards hunt them down.</p>
 						<div class="case-study-trigger">
 							<a href="#"							
 								data-blog="blog/work/party_game.html"
@@ -297,23 +314,25 @@
 		<details class="work-row">
 			<summary>
 				<span class="work-index">04</span>
-				<strong>Turn Based Strategy</strong>
+				<strong>Tactical RPG</strong>
 				<span class="work-type">ISOMETRIC | TURN-BASED</span>
 				<span class="accordion-plus">+</span>
 			</summary>
 			<div class="work-panel">
 				<div class="work-panel-main">
 					<div class="media-placeholder media-trigger">
-						<video class="work-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
+						<img class="work-video" src="http://localhost/portfolio/assets/work/turn_based_strategy/tbs-banner.png" alt="Turn Based Strategy main gameplay view">
+						<!--<video class="work-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
 							<source src="assets/work/turn_based_strategy/turn-based-gameplay.mp4" type="video/mp4">
-						</video>
+						</video>-->
 					</div>
 					<div>
-						<h3>RTS Project</h3>
-						<p>Real-time strategy project combining gameplay systems, large unit counts, 3D art, shaders, VFX and custom Unity tooling.</p>
+						<h3>Tactical RPG Project</h3>
+						<p>A sci-fi and fantasy tactical adventure blending open-world planetary exploration with turn-based combat across multiple worlds.</p>
+						<p>Designed for Android and PC.</p>
 						<div class="case-study-trigger">
 							<a href="#"							
-								data-blog="blog/work/turn_based_stragegy.html"
+								data-blog="blog/work/turn_based_strategy.html"
 								data-media="0">
 								VIEW CASE STUDY
 							</a>
@@ -323,7 +342,7 @@
 			</div>
 		</details>
 			
-        <details class="work-row">
+        <!--<details class="work-row">
 			<summary>
 				<span class="work-index">05</span>
 				<strong>Survival</strong>
@@ -348,7 +367,7 @@
 					</div>
 				</div>
 			</div>
-		</details>
+		</details>-->
 			
 	</div>
 </section>
@@ -933,13 +952,31 @@
 				</div>
 			</div>
 		</figure>
+		
+		<figure class="art-card reveal media-trigger"
+				data-art="environment"
+				data-blog="blog/3d_art_environment_world_map.html"
+				data-media-type="image"
+				data-media-src="assets/3d_art/environment/world-map.png"
+				data-media-title="Environment">
+			<div class="portfolio-image">
+				<img
+					src="assets/3d_art/environment/world-map.png"
+					alt="Environment">
+				<i class="corner-mark">25</i>
+				<div class="portfolio-info">
+					<h3>World Map</h3>
+					<p>RTS | Unity Terrain</p>
+				</div>
+			</div>
+		</figure>
 
 		<!--
 		<figure class="art-card reveal media-trigger"
 				data-art="environment"
 				data-blog="blog/3d_design.html"
 				data-media-type="youtube"
-				data-media-src="YOUR_VIDEO_ID"
+				data-media-src="vNgGX0q-7bo"
 				data-media-title="Environment Breakdown">
 			<div class="portfolio-image">
 				<span>ENVIRONMENT / BREAKDOWN</span>

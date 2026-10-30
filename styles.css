@@ -1,7 +1,7 @@
 /* =========================================================
    DAVYLINK PORTFOLIO — VISUAL VARIABLES
    ========================================================= */
-
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap");
 
 :root {
@@ -818,10 +818,9 @@ button {
 }
 
 .portfolio-info h3:after {
-    content: " ➤";
-
+    /*content: " ➤";*/
+	content: "\27A4";
     color: var(--accent);
-
     font-size: 12px;
 }
 
@@ -912,8 +911,8 @@ button {
 }
 
 .work-row.is-open .work-panel{
-    opacity:1;
-    padding-bottom:50px;
+    opacity: 1;
+    padding-bottom: 0px;
 }
 
 .work-panel-main{
@@ -3110,7 +3109,7 @@ body.modal-open {
 .work-case-study {
 	width: min(1200px, 92%);
 	margin: 0 auto;
-	padding: 90px 0 120px;
+	padding: 50px 0 50px;
 }
 
 /* ============================================================
@@ -3118,7 +3117,7 @@ body.modal-open {
 	============================================================ */
 
 .work-case-study-header {
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 }
 
 .work-case-study-eyebrow {
@@ -3141,13 +3140,13 @@ body.modal-open {
 
 .work-case-study-header h1 {
 	margin: 0 0 20px;
-	font-size: clamp(3rem, 8vw, 7rem);
+	font-size: clamp(3rem, 8vw, 6rem);
 	font-weight: 400;
 	line-height: 0.95;
 }
 
 .work-case-study-subtitle {
-	max-width: 700px;
+	/*max-width: 700px;*/
 	font-size: 1.15rem;
 	line-height: 1.7;
 	opacity: 0.7;
@@ -3163,57 +3162,51 @@ body.modal-open {
 	============================================================ */
 
 .work-case-study-hero {
-
-	margin-bottom: 100px;
-
+	margin-bottom: 0px;
 }
 
 
 .work-case-study-hero-media {
-
 	position: relative;
-
 	width: 100%;
-
-	aspect-ratio: 16 / 7;
-
+	aspect-ratio: 16 / 9;
 	overflow: hidden;
-
 	background: #111;
-
 	border: 1px solid rgba(255,255,255,0.12);
-
 }
 
 
 .work-case-study-hero-media img {
-
 	width: 100%;
 	height: 100%;
-
 	display: block;
-
 	object-fit: cover;
-
 }
 
+.work-case-study-hero-media video {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
 
 .media-label {
-
 	position: absolute;
-
 	top: 15px;
 	left: 15px;
-
 	z-index: 2;
-
 	padding: 6px 9px;
-
 	font-family: monospace;
 	font-size: 0.65rem;
-
 	background: rgba(0,0,0,0.65);
+}
 
+.youtube-media iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    border: 0;
 }
 
 
@@ -3222,50 +3215,34 @@ body.modal-open {
 	============================================================ */
 
 .work-case-study-intro {
-
 	display: grid;
-
-	grid-template-columns: 1fr 1fr;
-
-	gap: 60px;
-
-	margin-bottom: 100px;
-
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 35px;
 }
-
 
 .work-case-study-intro-block {
+	/*border-top: 1px solid rgba(255,255,255,0.15);
+	padding-top: 20px;*/
 
-	border-top: 1px solid rgba(255,255,255,0.15);
-
-	padding-top: 20px;
-
+	padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.025);
 }
-
 
 .work-case-study-intro-block h2 {
-
 	margin: 0 0 20px;
-
 	font-family: monospace;
-
 	font-size: 0.75rem;
-
 	letter-spacing: 0.08em;
-
 	font-weight: 400;
-
 }
 
-
 .work-case-study-intro-block p {
-
 	margin: 0;
-
 	max-width: 600px;
-
-	line-height: 1.7;
-
+	line-height: 1.6;
+    opacity: 0.7;
 }
 
 
@@ -3274,57 +3251,33 @@ body.modal-open {
 	============================================================ */
 
 .work-case-study-section {
-
-	margin-bottom: 110px;
-
+	margin-bottom: 40px;
 }
-
 
 .work-case-study-section-header {
-
 	display: grid;
-
-	grid-template-columns: 80px 1fr;
-
+	grid-template-columns: 1fr;
 	gap: 30px;
-
-	margin-bottom: 40px;
-
+	margin-bottom: 20px;
 }
-
 
 .work-case-study-index {
-
 	font-family: monospace;
-
 	font-size: 0.75rem;
-
 	opacity: 0.5;
-
 }
-
 
 .work-case-study-section-header h2 {
-
 	margin: 0;
-
 	font-size: clamp(1.8rem, 3vw, 3rem);
-
 	font-weight: 400;
-
 }
 
-
 .work-case-study-section-header p {
-
 	max-width: 700px;
-
 	margin-top: 12px;
-
 	line-height: 1.7;
-
 	opacity: 0.65;
-
 }
 
 
@@ -3333,52 +3286,31 @@ body.modal-open {
 	============================================================ */
 
 .work-case-study-media {
-
 	display: grid;
-
 	grid-template-columns: repeat(2, 1fr);
-
 	gap: 15px;
-
 	margin-top: 35px;
-
 }
-
 
 .work-case-study-media-item {
-
 	position: relative;
-
 	min-height: 300px;
-
 	overflow: hidden;
-
 	background: #111;
-
 	border: 1px solid rgba(255,255,255,0.1);
-
 }
-
 
 .work-case-study-media-item img,
 .work-case-study-media-item video {
-
 	width: 100%;
 	height: 100%;
-
 	display: block;
-
 	object-fit: cover;
-
 }
 
-
 .work-case-study-media-item.large {
-
 	grid-column: span 2;
-
-	aspect-ratio: 16 / 8;
-
+	aspect-ratio: 16 / 9;
 }
 
 
@@ -3387,162 +3319,127 @@ body.modal-open {
 	============================================================ */
 
 .work-case-study-info-grid {
-
 	display: grid;
-
 	grid-template-columns: repeat(2, 1fr);
-
 	gap: 15px;
-
 	margin-top: 35px;
-
 }
-
 
 .work-case-study-info {
-
 	padding: 25px;
-
 	border: 1px solid rgba(255,255,255,0.1);
-
 	background: rgba(255,255,255,0.025);
-
 }
 
+.work-case-study-info.large {
+	grid-column: span 2;
+}
 
 .work-case-study-info h3 {
-
 	margin: 0 0 12px;
-
 	font-family: monospace;
-
 	font-size: 0.75rem;
-
 	letter-spacing: 0.08em;
-
 	font-weight: 400;
-
 }
-
 
 .work-case-study-info p {
-
 	margin: 0;
-
 	line-height: 1.6;
-
 	opacity: 0.7;
-
 }
-
 
 /* ============================================================
 	TECHNICAL LIST
 	============================================================ */
 
 .work-case-study-list {
-
-	display: grid;
-
+	/*display: grid;
 	grid-template-columns: repeat(2, 1fr);
-
 	gap: 1px;
-
 	margin-top: 35px;
-
-	background: rgba(255,255,255,0.12);
-
+	background: rgba(255,255,255,0.12);*/
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	margin-top: 35px;
 }
 
 
 .work-case-study-list-item {
-
+	/*padding: 25px;
+	background: #0b0b0b;*/
 	padding: 25px;
-
-	background: #0b0b0b;
-
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.025);
 }
-
 
 .work-case-study-list-item strong {
-
 	display: block;
-
 	margin-bottom: 8px;
-
 	font-family: monospace;
-
 	font-size: 0.75rem;
-
 	letter-spacing: 0.06em;
-
 }
-
 
 .work-case-study-list-item span {
-
-	line-height: 1.5;
-
-	opacity: 0.65;
-
+	line-height: 1.6;
+	opacity: 0.7;
 }
-
 
 /* ============================================================
 	TAGS
 	============================================================ */
 
 .work-case-study-tags {
-
 	display: flex;
-
 	flex-wrap: wrap;
-
 	gap: 8px;
-
 	margin-top: 50px;
-
 }
-
 
 .work-case-study-tag {
-
 	padding: 7px 10px;
-
 	border: 1px solid rgba(255,255,255,0.15);
-
 	font-family: monospace;
-
 	font-size: 0.65rem;
-
 	letter-spacing: 0.05em;
-
 }
-
 
 /* ============================================================
 	FOOTER
 	============================================================ */
 
 .work-case-study-footer {
-
-	padding-top: 50px;
-
-	border-top: 1px solid rgba(255,255,255,0.15);
-
+	/*padding-top: 10px;
+	border-top: 1px solid rgba(255,255,255,0.15);*/
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 35px;
 }
 
+.work-case-study-footer-block {
+	/*max-width: 600px;
+	line-height: 1.7;
+	opacity: 0.65;*/
+	padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.025);
+}
 
 .work-case-study-footer p {
-
-	max-width: 600px;
-
-	line-height: 1.7;
-
-	opacity: 0.65;
-
+	line-height: 1.5;
+    opacity: 0.65;
 }
 
+.work-case-study-footer strong {
+	display: block;
+    margin-bottom: 8px;
+    font-family: monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+}
 
 /* ============================================================
 RESPONSIVE
@@ -3550,60 +3447,36 @@ RESPONSIVE
 
 @media (max-width: 800px) {
 
-.work-case-study {
+	.work-case-study {
+		width: 90%;
+		padding-top: 60px;
+	}
 
-	width: 90%;
+	.work-case-study-intro {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
 
-	padding-top: 60px;
+	.work-case-study-media {
+		grid-template-columns: 1fr;
+	}
 
-}
+	.work-case-study-media-item.large {
+		grid-column: span 1;
+	}
 
+	.work-case-study-info-grid {
+		grid-template-columns: 1fr;
+	}
 
-.work-case-study-intro {
+	.work-case-study-list {
+		grid-template-columns: 1fr;
+	}
 
-	grid-template-columns: 1fr;
-
-	gap: 40px;
-
-}
-
-
-.work-case-study-media {
-
-	grid-template-columns: 1fr;
-
-}
-
-
-.work-case-study-media-item.large {
-
-	grid-column: span 1;
-
-}
-
-
-.work-case-study-info-grid {
-
-	grid-template-columns: 1fr;
-
-}
-
-
-.work-case-study-list {
-
-	grid-template-columns: 1fr;
-
-}
-
-
-.work-case-study-section-header {
-
-	grid-template-columns: 50px 1fr;
-
-	gap: 15px;
-
-}
-
+	.work-case-study-section-header {
+		grid-template-columns: 50px 1fr;
+		gap: 15px;
+	}
 }
 
 
