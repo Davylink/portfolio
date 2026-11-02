@@ -1340,19 +1340,21 @@ button {
 }
 
 .about-content{
-    max-width:720px;
+    max-width: 100%;
 }
 
 .about-content p{
     margin-bottom:20px;
     color:var(--text-soft);
+	text-align: justify;
 }
 
 .about-content .about-intro{
-    font-size:clamp(22px,3vw,34px);
+    font-size:clamp(18px,3vw,22px);
     font-weight:300;
     line-height:1.4;
     color:var(--text);
+	text-align: justify;
 }
 
 .about-buttons{
@@ -1376,7 +1378,8 @@ button {
 }
 
 .button:hover{
-    opacity:.7;
+    /*opacity:.7;*/
+	background: var(--accent);
 }
 
 .button-outline{
