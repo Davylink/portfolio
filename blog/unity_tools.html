@@ -6,7 +6,7 @@
     <title>Davylink | Unity Tools</title>
 	<meta
         name="description"
-        content="Davylink — Shader Development / Real-time Materials / Unity"
+        content="Davylink — Unity Tools"
     >
     <link rel="stylesheet" href="../styles.css">
 
@@ -29,7 +29,7 @@
 
 			<p class="eyebrow">
 				<span class="status-dot"></span>
-				C# TOOLS / UNITY EDITOR
+				C# TOOLS | UNITY EDITOR
 			</p>
 
 			<h1>UNITY TOOLS</h1>
@@ -43,22 +43,17 @@
 		</header>
 
 		<!-- ============================================================
-			 SHADER LIST
+			 TOOLS LIST
 			 ============================================================ -->
 
 		<section class="shader-list">
 
 			<!-- ========================================================
-				 SHADER 01
+				 TOOL 01
 				 ======================================================== -->
 
-			<!--<details class="shader-item" open>-->
 			<details class="shader-item">
 				<summary>
-					<!--
-						Preview shown while accordion is closed.
-						Change this image for each shader.
-					-->
 					<div
 						class="shader-preview"
 						style="background-image: url('assets/technical_art/unity_tools/prefab-painter-banner.png');">
@@ -76,7 +71,7 @@
 					<span class="shader-title">
 						<strong>Prefab Painter</strong>
 						<span>
-							TOOL / UNITY
+							PREFABS | TERRAIN
 						</span>
 					</span>
 					<span class="shader-type">
@@ -139,21 +134,11 @@
 
 					</div>
 
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								PREFAB PAINTER USAGE
 							</span>
-							<!--<img
-								src="../assets/technical_art/unity_tools/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/unity_tools/prefab-painter-painting.mp4"
@@ -177,28 +162,28 @@
 							</h3>
 							<ul>
 								<li>
-									Full PBR pipeline integration for realistic material interaction.
+									Filter prefabs by category folder.
 								</li>
 								<li>
-									Alpha-based SSR and depth buffer transparency, allowing clear views of the units interior.
+									Allow the placement of variants of the same prefab.
 								</li>
 								<li>
-									Mask system for controlling multiple features like metallic/smoothness, height and ambient occlusion using RGBA channels.
+									Placement on the terrain or over other objects with colliders.
 								</li>
 								<li>
-									Mask system for enabling wear, dirt and damage using RGBA channels.
+									Scale, rotation and height can be modified manually.
 								</li>
 								<li>
-									Team color selection and emission RBG system allowing easy dynamic color changing of different model emissive parts.
+									Possibility to randomize size, rotation and color between established parameters.
 								</li>
 								<li>
-									Per-channel emission control with masked scrolling UVs and pulsing effects for interesting glowing effects.
+									Brush mode allowing to place multiple prefabs taking into account the established random parameters.
 								</li>
 								<li>
-									Texture UV displacement for moving parts such as conveyor belts or tank tracks with speed controlled via script.
+									Erase mode for deleting multiple prefabs at once.
 								</li>
 								<li>
-									A dissolve-based appearance or disappearance effect, with controllable edge glow, for spawning or hidding effects.
+									Ditribution of the prefabs in categories folder to keep them organized.
 								</li>
 							</ul>
 						</div>
@@ -210,49 +195,40 @@
 							</h3>
 							<div class="shader-parameters">								
 								<div class="shader-parameter">
-									Diffuse Map
+									Category Filter
 								</div>
 								<div class="shader-parameter">
-									Normal Map
+									Icon Size
 								</div>
 								<div class="shader-parameter">
-									Mask Map (Adjustable)
+									Search
 								</div>
 								<div class="shader-parameter">
-									Emissive Map (RGB channels custom color)
+									Allow Variations
 								</div>
 								<div class="shader-parameter">
-									Team Color
+									Randomize Size
 								</div>
 								<div class="shader-parameter">
-									Fog Of War Vanishing Setup
+									Randomize Rotation
 								</div>
 								<div class="shader-parameter">
-									Dissolve Effect Setup
+									Randomize Color
 								</div>
 								<div class="shader-parameter">
-									Damage / Dirt / Opacity Mask
+									Brush Mode
 								</div>
 								<div class="shader-parameter">
-									Dirt Setup
+									Brush Radius
 								</div>
 								<div class="shader-parameter">
-									Damage Setup
+									Brush Density
 								</div>
 								<div class="shader-parameter">
-									Main Texture UV displacement animation
+									Erase Mode
 								</div>
 								<div class="shader-parameter">
-									Team Color UV displacement animation
-								</div>
-								<div class="shader-parameter">
-									Emissive UV displacement animation
-								</div>
-								<div class="shader-parameter">
-									Emissive fading animation
-								</div>
-								<div class="shader-parameter">
-									Emissive noise
+									Snap To Grid
 								</div>
 							</div>
 						</div>
@@ -264,22 +240,16 @@
 
 					<div class="shader-tags">
 						<span class="shader-tag">
-							SHADER GRAPH
+							C#
 						</span>
 						<span class="shader-tag">
-							PBR
+							PREFABS
 						</span>
 						<span class="shader-tag">
-							EMISSION
+							EDITOR
 						</span>
 						<span class="shader-tag">
-							DISSOLVE
-						</span>
-						<span class="shader-tag">
-							TEAM COLOR
-						</span>
-						<span class="shader-tag">
-							ANIMATION
+							SHADERS
 						</span>
 						<span class="shader-tag">
 							REAL-TIME
@@ -292,7 +262,7 @@
 			</details>
 			
 			<!-- ========================================================
-				 SHADER 02
+				 TOOL 02
 				 ======================================================== -->
 
 			<details class="shader-item">
@@ -315,11 +285,11 @@
 					<span class="shader-title">
 						<strong>Road Path Tool</strong>
 						<span>
-							SPLINES / ROAD BUILDING
+							SPLINES | ROAD BUILDING
 						</span>
 					</span>
 					<span class="shader-type">
-						C# | UNITY | SHADER GRAPH
+						C# | UNITY | SPLINES
 					</span>
 					<span class="shader-plus">
 						+
@@ -333,7 +303,7 @@
 					<div class="shader-description">
 						<h2>Interactive Volumetric Fog Of War</h2>
 						<p>
-							Pending...
+							Custom spline-based path generators for quick infrastructure and terrain alignment. It allows the use of different meshes as railways, roads, pipes, cables... It also uses spline anchors snapping with intersections.
 						</p>
 					</div>
 
@@ -378,21 +348,11 @@
 
 					</div>
 
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								CHANGING BASE MESH
 							</span>
-							<!--<img
-								src="../assets/technical_art/unity_tools/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/unity_tools/road-path-mesh-change.mp4"
@@ -405,9 +365,6 @@
 							<span class="shader-media-label">
 								ADDING SEGMENTS
 							</span>
-							<!--<img
-								src="../assets/technical_art/unity_tools/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/unity_tools/road-path-segment.mp4"
@@ -431,16 +388,28 @@
 							</h3>
 							<ul>
 								<li>
-									Pattern mapping and projection adaptable to various complex geometries.
+									Spline based mesh deform, allowing different meshes.
 								</li>
 								<li>
-									Fresnel effect tuned for edge glow and holographic depth.
+									Real-time spline modification. It allows on-demand update for complex meshes.
 								</li>
 								<li>
-									Highly customizable color emission control.
+									Stick to terrain or adjust height manually.
 								</li>
 								<li>
-									Custom mask map for resource optimization.
+									Snap to the anchors of intersection prefabs.
+								</li>
+								<li>
+									Add or delete segments.
+								</li>
+								<li>
+									Generate navigation and colliders.
+								</li>
+								<li>
+									Generate security borders for unit navigation without jumping over the borders.
+								</li>
+								<li>
+									Generate spline for using with unit routes.
 								</li>
 							</ul>
 						</div>
@@ -452,49 +421,37 @@
 							</h3>
 							<div class="shader-parameters">								
 								<div class="shader-parameter">
-									Main Color
+									Mesh
 								</div>
 								<div class="shader-parameter">
-									Noise Color
+									Mesh Scale
+								</div>								
+								<div class="shader-parameter">
+									Update Mesh
 								</div>
 								<div class="shader-parameter">
-									Outline Color
+									Update Mesh Continuously
 								</div>
 								<div class="shader-parameter">
-									Opacity
+									Stick To Terrain
 								</div>
 								<div class="shader-parameter">
-									Mask
+									Terrain Offset
 								</div>
 								<div class="shader-parameter">
-									Fresnel Power
+									Smooth Iterations
 								</div>
 								<div class="shader-parameter">
-									Wave Distance
+									Generate Spline
 								</div>
 								<div class="shader-parameter">
-									Wave Speed
+									Enable Collider
 								</div>
 								<div class="shader-parameter">
-									Wave Width
+									Safety Edge Width
 								</div>
 								<div class="shader-parameter">
-									Noise Speed
-								</div>
-								<div class="shader-parameter">
-									Noise Density
-								</div>
-								<div class="shader-parameter">
-									Noise Power
-								</div>
-								<div class="shader-parameter">
-									Border Power
-								</div>
-								<div class="shader-parameter">
-									Border Width
-								</div>
-								<div class="shader-parameter">
-									Border Depth
+									Road Width
 								</div>
 							</div>
 						</div>
@@ -506,16 +463,19 @@
 
 					<div class="shader-tags">
 						<span class="shader-tag">
-							SHADER GRAPH
+							SPLINES
 						</span>
 						<span class="shader-tag">
-							EMISSION
+							C#
 						</span>
 						<span class="shader-tag">
-							FRESNEL
+							GUI
 						</span>
 						<span class="shader-tag">
-							VERTEX DISPLACEMENT
+							TERRAIN
+						</span>
+						<span class="shader-tag">
+							COLLIDERS
 						</span>
 						<span class="shader-tag">
 							REAL-TIME
@@ -528,16 +488,12 @@
 			</details>
 			
 			<!-- ========================================================
-				 SHADER 03
+				 TOOL 03
 				 ======================================================== -->
 
 			<details class="shader-item">
 
 				<summary>
-					<!--
-						Preview shown while accordion is closed.
-						Change this image for each shader.
-					-->
 					<div
 						class="shader-preview"
 						style="background-image: url('assets/technical_art/unity_tools/region-painter-banner.png');">
@@ -555,7 +511,7 @@
 					<span class="shader-title">
 						<strong>Region Painter</strong>
 						<span>
-							VERTEX DISPLACEMENT / ANIMATED MATERIAL
+							REGIONS | UNITY GUI
 						</span>
 					</span>
 					<span class="shader-type">
@@ -571,11 +527,9 @@
 						 DESCRIPTION
 						 ------------------------------------------------ -->
 					<div class="shader-description">
-						<h2>Technological Holographic Shield</h2>
+						<h2>Region Painter Tool</h2>
 						<p>
-							A holographic-style procedural material designed to create futuristic displays and force-field shields. 
-							It features customizable colors, zonal light intensity control, polygon displacement, animation speed and dynamic edge effects. 
-							Fully optimized for real-time use in Unity.
+							A tool able to create on the terrain regions of different shapes to use with mission or event editors.
 						</p>
 					</div>
 
@@ -620,21 +574,11 @@
 
 					</div>
 
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								REGION PLACEMENT
 							</span>
-							<!--<img
-								src="../assets/technical_art/unity_tools/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/unity_tools/region-painter-unity.mp4"
@@ -666,16 +610,19 @@
 							</h3>
 							<ul>
 								<li>
-									Pattern mapping and projection adaptable to various complex geometries.
+									Create regions of diferent shapes (Rectangle, Circle, Polygon).
 								</li>
 								<li>
-									Fresnel effect tuned for edge glow and holographic depth.
+									Establish a name and color to identify the regions easily.
 								</li>
 								<li>
-									Highly customizable color emission control.
+									Edit region points or delete regions.
 								</li>
 								<li>
-									Custom mask map for resource optimization.
+									Use the regions with mission and event editors to detect events within the regions.
+								</li>
+								<li>
+									Possibility to attach weather VFX or ambient sound to the region.
 								</li>
 							</ul>
 						</div>
@@ -685,51 +632,21 @@
 							<h3>
 								EXPOSED PARAMETERS
 							</h3>
-							<div class="shader-parameters">								
+							<div class="shader-parameters">							
 								<div class="shader-parameter">
-									Main Color
+									Region Name
+								</div>							
+								<div class="shader-parameter">
+									Region Color
 								</div>
 								<div class="shader-parameter">
-									Noise Color
+									Region Shape
 								</div>
 								<div class="shader-parameter">
-									Outline Color
+									Weather Effect
 								</div>
 								<div class="shader-parameter">
-									Opacity
-								</div>
-								<div class="shader-parameter">
-									Mask
-								</div>
-								<div class="shader-parameter">
-									Fresnel Power
-								</div>
-								<div class="shader-parameter">
-									Wave Distance
-								</div>
-								<div class="shader-parameter">
-									Wave Speed
-								</div>
-								<div class="shader-parameter">
-									Wave Width
-								</div>
-								<div class="shader-parameter">
-									Noise Speed
-								</div>
-								<div class="shader-parameter">
-									Noise Density
-								</div>
-								<div class="shader-parameter">
-									Noise Power
-								</div>
-								<div class="shader-parameter">
-									Border Power
-								</div>
-								<div class="shader-parameter">
-									Border Width
-								</div>
-								<div class="shader-parameter">
-									Border Depth
+									Ambient Sound
 								</div>
 							</div>
 						</div>
@@ -741,19 +658,13 @@
 
 					<div class="shader-tags">
 						<span class="shader-tag">
-							SHADER GRAPH
+							GUI
 						</span>
 						<span class="shader-tag">
-							EMISSION
+							TERRAIN
 						</span>
 						<span class="shader-tag">
-							FRESNEL
-						</span>
-						<span class="shader-tag">
-							VERTEX DISPLACEMENT
-						</span>
-						<span class="shader-tag">
-							REAL-TIME
+							C#
 						</span>
 						<span class="shader-tag">
 							UNITY
@@ -763,16 +674,12 @@
 			</details>
 			
 			<!-- ========================================================
-				 SHADER 04
+				 TOOL 04
 				 ======================================================== -->
 
 			<details class="shader-item">
 
 				<summary>
-					<!--
-						Preview shown while accordion is closed.
-						Change this image for each shader.
-					-->
 					<div
 						class="shader-preview"
 						style="background-image: url('assets/technical_art/unity_tools/mission-editor-banner.png');">
@@ -790,7 +697,7 @@
 					<span class="shader-title">
 						<strong>Mission Editor</strong>
 						<span>
-							VERTEX DISPLACEMENT / ANIMATED MATERIAL
+							EVENTS | CONDITIONS
 						</span>
 					</span>
 					<span class="shader-type">
@@ -806,10 +713,9 @@
 						 DESCRIPTION
 						 ------------------------------------------------ -->
 					<div class="shader-description">
-						<h2>Tree and plants with foliage animation</h2>
+						<h2>Mission Editor with Scriptable Objects</h2>
 						<p>
-							Interactive foliage material capable of simulating realistic wind movement through the leaves. 
-							It allows for full customization of foliage color and the adjustment of multiple wind parameters to suit various atmospheric conditions within the Unity game environment.
+							The mission editor can combine different types of mission and conditions to generate a lot of possible missions and events to any game.
 						</p>
 					</div>
 
@@ -858,21 +764,11 @@
 
 					</div>
 
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								EDITOR WINDOW
 							</span>
-							<!--<img
-								src="../assets/technical_art/unity_tools/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/unity_tools/mission-editor.mp4"
@@ -906,16 +802,16 @@
 							</h3>
 							<ul>
 								<li>
-									Noise-based vertex animation for wind simulation.
+									Mission editor able to generate events for in-game implementation.
 								</li>
 								<li>
-									Customizable, instanced foliage colorization system.
+									Multiple condition types, with the possibility to add combined conditions or add more than one.
 								</li>
 								<li>
-									Optimized for use in large forest areas with multiple instances.
+									Options to show mission progress and generate events when mission is acomplished.
 								</li>
 								<li>
-									Positional displacement in mesh local space.
+									Missions can be ordered and sorted into main or secondary missions, which can be optional.
 								</li>
 							</ul>
 						</div>
@@ -927,31 +823,31 @@
 							</h3>
 							<div class="shader-parameters">								
 								<div class="shader-parameter">
-									Foliage Color
+									Mission ID
 								</div>
 								<div class="shader-parameter">
-									Emission Color
+									Mission Type
 								</div>
 								<div class="shader-parameter">
-									Emission Intensity
+									Is Optional
 								</div>
 								<div class="shader-parameter">
-									Alpha Clipping
+									Title
 								</div>
 								<div class="shader-parameter">
-									Mask
+									Description
 								</div>
 								<div class="shader-parameter">
-									Wind Direction
+									Objectives
 								</div>
 								<div class="shader-parameter">
-									Wind Speed
+									Conditions
 								</div>
 								<div class="shader-parameter">
-									Wind Speed Limit
+									Condition Type
 								</div>
 								<div class="shader-parameter">
-									Wind Strength
+									Condition Parameters
 								</div>
 							</div>
 						</div>
@@ -963,19 +859,13 @@
 
 					<div class="shader-tags">
 						<span class="shader-tag">
-							SHADER GRAPH
+							C#
 						</span>
 						<span class="shader-tag">
-							VERTEX ANIMATION
+							SCRIPTABLE OBJECTS
 						</span>
 						<span class="shader-tag">
-							ENVIRONMENT
-						</span>
-						<span class="shader-tag">
-							WIND SIMULATION
-						</span>
-						<span class="shader-tag">
-							REAL-TIME
+							EVENTS
 						</span>
 						<span class="shader-tag">
 							UNITY

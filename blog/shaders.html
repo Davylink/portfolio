@@ -6,7 +6,7 @@
     <title>Davylink | Shaders</title>
 	<meta
         name="description"
-        content="Davylink — Shader Development / Real-time Materials / Unity"
+        content="Davylink — Shader Development"
     >
     <link rel="stylesheet" href="../styles.css">
 
@@ -26,7 +26,7 @@
 
 			<p class="eyebrow">
 				<span class="status-dot"></span>
-				REAL-TIME / SHADER DEVELOPMENT
+				REAL-TIME | SHADER DEVELOPMENT
 			</p>
 
 			<h1>SHADERS</h1>
@@ -50,13 +50,8 @@
 				 SHADER 01
 				 ======================================================== -->
 
-			<!--<details class="shader-item" open>-->
 			<details class="shader-item">
 				<summary>
-					<!--
-						Preview shown while accordion is closed.
-						Change this image for each shader.
-					-->
 					<div
 						class="shader-preview"
 						style="background-image: url('assets/technical_art/shaders/team_color_shader_banner.png');">
@@ -74,7 +69,7 @@
 					<span class="shader-title">
 						<strong>Complex Unit Shader</strong>
 						<span>
-							INTERACTIVE / CUSTOMIZABLE MATERIAL
+							INTERACTIVE | CUSTOMIZABLE MATERIAL
 						</span>
 					</span>
 					<span class="shader-type">
@@ -138,22 +133,12 @@
 						</div>
 
 					</div>
-
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
+					
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								COLOR CUSTOMIZATION
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/team_color_variance.mp4"
@@ -166,9 +151,6 @@
 							<span class="shader-media-label">
 								FOG OF WAR DISSOLVE
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/team_color_fow.mp4"
@@ -183,9 +165,6 @@
 							<span class="shader-media-label">
 								INTERACTIVE DAMAGE
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/team_color_shader_damage.mp4"
@@ -198,9 +177,6 @@
 							<span class="shader-media-label">
 									ANIMATED VARIANT
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/team_color_shader_animation.mp4"
@@ -362,7 +338,7 @@
 					<span class="shader-title">
 						<strong>Fog Of War</strong>
 						<span>
-							VOLUMETRIC FOG / INTERACTIVE MATERIAL
+							VOLUMETRIC FOG | INTERACTIVE MATERIAL
 						</span>
 					</span>
 					<span class="shader-type">
@@ -380,7 +356,7 @@
 					<div class="shader-description">
 						<h2>Interactive Volumetric Fog Of War</h2>
 						<p>
-							Fog of war implemented using render textures and scripting. Can be used with volumetric fog or with a simple plane fog simulation.
+							Fog of war implemented using render textures and scripting. Can be used with volumetric fog or with a simple plane fog simulation. The render textures are also used in the dissolve section of the Team Color shader.
 						</p>
 					</div>
 
@@ -425,21 +401,11 @@
 
 					</div>
 
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								DISSOLVE
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/fow_shader_dissolve.mp4"
@@ -452,9 +418,6 @@
 							<span class="shader-media-label">
 								INTERACTIVE EXPLORATION
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/fow_shader_exploration.mp4"
@@ -469,9 +432,6 @@
 							<span class="shader-media-label">
 								VOLUMETRIC COLORS
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/fow_volumetric_shader_colors.mp4"
@@ -484,9 +444,6 @@
 							<span class="shader-media-label">
 								COLOR VARIATIONS
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/fow_shader_colors.mp4"
@@ -510,16 +467,13 @@
 							</h3>
 							<ul>
 								<li>
-									Pattern mapping and projection adaptable to various complex geometries.
+									Volumetric fog material with customizable parameters.
 								</li>
 								<li>
-									Fresnel effect tuned for edge glow and holographic depth.
+									Different deep according to render texture to show or hide terrain.
 								</li>
 								<li>
-									Highly customizable color emission control.
-								</li>
-								<li>
-									Custom mask map for resource optimization.
+									Compatible with 2D plane Fog Of War for noise customization.
 								</li>
 							</ul>
 						</div>
@@ -531,49 +485,34 @@
 							</h3>
 							<div class="shader-parameters">								
 								<div class="shader-parameter">
-									Main Color
+									Render Texture
 								</div>
 								<div class="shader-parameter">
-									Noise Color
+									Map Size
 								</div>
 								<div class="shader-parameter">
-									Outline Color
+									Fog Height
 								</div>
 								<div class="shader-parameter">
-									Opacity
+									Tiling
 								</div>
 								<div class="shader-parameter">
-									Mask
+									Wind Speed
 								</div>
 								<div class="shader-parameter">
-									Fresnel Power
+									Gradient Color Top
 								</div>
 								<div class="shader-parameter">
-									Wave Distance
+									Gradient Color Bottom
 								</div>
 								<div class="shader-parameter">
-									Wave Speed
+									See Explored Terrain
 								</div>
 								<div class="shader-parameter">
-									Wave Width
+									Detail Wind Speed
 								</div>
 								<div class="shader-parameter">
-									Noise Speed
-								</div>
-								<div class="shader-parameter">
-									Noise Density
-								</div>
-								<div class="shader-parameter">
-									Noise Power
-								</div>
-								<div class="shader-parameter">
-									Border Power
-								</div>
-								<div class="shader-parameter">
-									Border Width
-								</div>
-								<div class="shader-parameter">
-									Border Depth
+									Detail Tiling
 								</div>
 							</div>
 						</div>
@@ -613,10 +552,6 @@
 			<details class="shader-item">
 
 				<summary>
-					<!--
-						Preview shown while accordion is closed.
-						Change this image for each shader.
-					-->
 					<div
 						class="shader-preview"
 						style="background-image: url('assets/technical_art/shaders/hexa_shield_shader_banner.png');">
@@ -634,7 +569,7 @@
 					<span class="shader-title">
 						<strong>Sci-Fi Energy Shield</strong>
 						<span>
-							VERTEX DISPLACEMENT / ANIMATED MATERIAL
+							VERTEX DISPLACEMENT | ANIMATED MATERIAL
 						</span>
 					</span>
 					<span class="shader-type">
@@ -698,22 +633,12 @@
 						</div>
 
 					</div>
-
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
+					
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								DETAIL
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/hexa_shield_ingame.mp4"
@@ -726,9 +651,6 @@
 							<span class="shader-media-label">
 								VARIATIONS
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/hexa_shield_detail.mp4"
@@ -855,10 +777,6 @@
 			<details class="shader-item">
 
 				<summary>
-					<!--
-						Preview shown while accordion is closed.
-						Change this image for each shader.
-					-->
 					<div
 						class="shader-preview"
 						style="background-image: url('assets/technical_art/shaders/wind_foliage_shader_banner.png');">
@@ -876,7 +794,7 @@
 					<span class="shader-title">
 						<strong>Foliage Wind</strong>
 						<span>
-							VERTEX DISPLACEMENT / ANIMATED MATERIAL
+							VERTEX DISPLACEMENT | ANIMATED MATERIAL
 						</span>
 					</span>
 					<span class="shader-type">
@@ -940,21 +858,11 @@
 
 					</div>
 
-					<!-- ------------------------------------------------
-						 ADDITIONAL MEDIA
-						 
-						 Puedes añadir más imágenes o vídeos aquí.
-						 Si no necesitas esta sección, simplemente
-						 elimínala.
-						 ------------------------------------------------ -->
 					<div class="shader-extra-media">
 						<div class="shader-media">
 							<span class="shader-media-label">
 								PARAMETERS DETAIL
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/wind_foliage_ingame.mp4"
@@ -967,9 +875,6 @@
 							<span class="shader-media-label">
 								VARIATIONS
 							</span>
-							<!--<img
-								src="../assets/technical_art/shaders/hexa_shield_detail.png"
-								alt="Liquid Surface detail">-->
 							<video
 								class="shader-hover-video"
 								src="assets/technical_art/shaders/wind_foliage_detail.mp4"
