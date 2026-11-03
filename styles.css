@@ -2852,7 +2852,7 @@ body.modal-open {
 
 .shader-item summary > *:not(.shader-preview) {
 	position: relative;
-	opacity: 0.5;
+	opacity: 1;
 	z-index: 1;
 }
 
@@ -3028,9 +3028,9 @@ body.modal-open {
 	margin-top: 15px;
 }
 
-.shader-extra-media .shader-media {
+/*.shader-extra-media .shader-media {
 	min-height: 220px;
-}
+}*/
 
 /* ============================================================
    TECHNICAL BREAKDOWN
@@ -3477,7 +3477,8 @@ RESPONSIVE
 	}
 
 	.work-case-study-section-header {
-		grid-template-columns: 50px 1fr;
+		/*grid-template-columns: 50px 1fr;*/
+		grid-template-columns: 1fr;
 		gap: 15px;
 	}
 }
@@ -3502,10 +3503,10 @@ RESPONSIVE
 		grid-template-columns: 1fr;
 	}
 
-	.shader-media,
+	/*.shader-media,
 	.shader-media.result-media {
 		min-height: 300px;
-	}
+	}*/
 
 	.shader-details-grid {
 		grid-template-columns: 1fr;
@@ -3572,6 +3573,7 @@ RESPONSIVE
 
     .carousel-main {
         min-height: 300px;
+		width: 100%;
     }
 
     .carousel-stage {
@@ -3780,7 +3782,7 @@ RESPONSIVE
     }
 
     .work-panel {
-        padding-left: 35px;
+        padding-left: 0px;
     }
 
     .work-row[open] .work-panel {
@@ -3813,8 +3815,8 @@ RESPONSIVE
 
     .vertical-panel {
         left: 54px;
-
-        padding: 35px 25px;
+        padding: 10px 10px;
+		display: inline-block;
     }
 
     .vertical-panel p {
@@ -3956,6 +3958,77 @@ RESPONSIVE
 
 	.skills-left{
 		gap:45px;
+	}
+	
+	.filter-button,
+	.art-filter {
+		padding: 8px 8px;
+	}
+	
+	.portfolio-filters{
+		justify-content: space-between;
+	}
+	
+	.work-case-study-media-item{
+		min-height: auto;
+	}
+	
+	/*.large .work-case-study-media-item {
+		max-width: 100%;
+	}*/
+	
+	.youtube-media,
+	.youtube-media.large {
+		min-height: 300px;
+		max-width: 100%;
+	}
+
+	.shader-preview{
+		scale: 3.5;
+		background-repeat: no-repeat;
+	}
+
+
+	.shader-preview-video{
+		margin-left: 0px;
+		width: 100%;
+        max-height: 50px;
+        margin-top: 61px;
+		transition: opacity 0.4s ease, transform 0.5s ease;
+		display: none;
+	}
+
+	.shader-media-grid {
+		display: flex;
+		gap: 0;
+		margin-bottom: 21px;
+        flex-direction: column;
+	}
+
+	.shader-media {
+		position: relative;
+		flex: 1 1 0;
+		min-width: 0;
+		transition: flex-grow 1.4s ease, opacity 0.4s ease, transform 0.4s ease;
+		overflow: hidden;
+		border: 1px solid rgba(255, 255, 255, 0.12);
+		max-width: 100%;
+		
+		height: fit-content !important;
+		min-height: fit-content;
+		transition: all 0.6s ease;
+	}
+
+	.shader-media img:hover {
+		scale: 1.5;
+		transition: all 0.6s ease;
+	}
+
+	.shader-media,
+	.shader-media.result-media {
+		height: fit-content !important;
+		min-height: fit-content;
+		transition: all 0.6s ease
 	}
 }
 
